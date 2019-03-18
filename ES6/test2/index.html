@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  const tmpl = function() {
+    return {
+      title: "前端",
+      data: [
+      {
+        title: '布局基础',
+        date: ["html", "css"]
+      },
+      {
+        title: '网页特效',
+        date: ["javascript", "jquery"]
+      },
+      {
+        title: '框架',
+        date: ["bootstrap", "vue"]
+      }
+      ]
+    }
+  }
+    const { data } = tmpl()
+    let table = document.createElement('table')
+    let arr = []
+    const another = (data) => {
+        let array = [];
+        for (let j = 0;j < data.length; j++) {
+          array.push(`<td>${data[j]}</td>`)
+        }
+    return array.join('')
+  }
+    for (let i = 0; i < data.length; i++) {
+        arr.push(`<tr><td>${ data[i].title }</td><td>${another(data[i].date)}</td></tr>`)
+    }
+    table.innerHTML = arr.join('')
+  console.log(arr)
+    document.body.appendChild(table)
+</script>
+</body>
+</html>
