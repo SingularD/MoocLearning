@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<button id="pop">弹个框</button>
+
+<script type="text/javascript">
+  document.querySelector('#pop').addEventListener('click', function() {
+    new $Msg({
+      content: '贤者模式马上就过去了。。真的要清空吗？<span style="color: red;">~</span>',
+      confirm: function(e) {
+        console.log('confirm');
+        console.log(this);
+      },
+      cancel: function(e) {
+        console.log('cancel');
+        console.log(this);
+      },
+      useHTML: true
+    });
+  });
+</script>
+<script src="app.js">
+</script>
+</body>
+</html>
