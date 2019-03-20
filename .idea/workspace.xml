@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e7427b5-11fe-4192-b687-87501d3111f2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES6/test4/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/test4/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/学习总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/学习总结.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +20,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/test4/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
+            <state relative-caret-position="162">
               <caret line="6" selection-start-line="6" selection-start-column="4" selection-end-line="17" selection-end-column="12" />
             </state>
           </provider>
@@ -28,8 +29,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ES6/test4/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="946">
+              <caret line="110" lean-forward="true" selection-start-line="110" selection-start-column="2" selection-end-line="119" selection-end-column="31" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -164,12 +165,12 @@
       <updated>1552835382470</updated>
       <workItem from="1552835384550" duration="14962000" />
       <workItem from="1552978468823" duration="1091000" />
-      <workItem from="1552980591038" duration="3596000" />
+      <workItem from="1552980591038" duration="6492000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19649000" />
+    <option name="totallyTimeSpent" value="22545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="23" width="1265" height="1417" extended-state="0" />
@@ -301,15 +302,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ES6/test4/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
+        <state relative-caret-position="162">
           <caret line="6" selection-start-line="6" selection-start-column="4" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ES6/test4/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        <state relative-caret-position="946">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-start-column="2" selection-end-line="119" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
