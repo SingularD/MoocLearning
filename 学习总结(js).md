@@ -482,5 +482,31 @@ child.func() // 我喜欢写代码
 
 ### JavaScript 中bind(), call(), apply() 方法研究
 
+在js中，bind(),call(),apply()都用于改变this指向，以我的理解就是改变函数的运行环境，比如说，A类里面有一个a方法，通过上述三个方法可以使得a函数在另一个类B中也可以运行，也就是a可以用到B类中的属性
 
+```js
+const obj1 = {
+    name: '小明',
+    age: 10,
+    sayName() {
+        console.log(`大家好，我是${this.name}`)
+    }
+}
+const obj2 = {
+    name: '小红',
+    age: 20,
+    sayName() {
+        console.log(`大家好，我是${this.name}`)
+    }
+}
+// 现在我们有两个对象，第一个对象对象调用sayName方法会输出'大家好我是小明',但是现在我要
+// 输出'大家好，我是小红',第一种方法就是直接调用obj2中sayName方法,还有就是调用上述三个方
+// 法改变obj1中sayName方法之中this指向，当this指向指向obj2的时候，也有一样的效果
+
+obj1.sayName.call(obj2) // 大家好，我是小红
+const changeThis = obj1.sayName.bind(obj2)
+changeThis() // 大家好，我是小红
+```
+
+通过上述例子可以看到，在调用call方法的时候是立即执行，也只是在这次执行的时候改变this指向但是bind是永远改变this指向，并且要把新函数赋给新函数，要调用函数就必须调用新函数，综上，bind和call作用都是一样，改变this指向，但是使用方式有所不同，bind是永久改变this指，而call只是在调用的时候改变this指向。call其实apply的一个语法糖，他们只是参数不同，call是在新的对象后面直接添加参数`obj1.call(obj2, params1, params2...)`，apply是要数组形式传参`obj1.apply(obj2,[params1, params2...])`
 
