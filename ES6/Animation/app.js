@@ -1,17 +1,14 @@
 class Transform {
   constructor() {
     this.el = null;
-    this.init()
-    this._queue = [];
+    this._queue = []; // 存放数据顺序
     this._transform = {
       translate: '',
-      rotateL: '',
-      transition: ''
+      rotate: '',
+      scale: ''
     }
-
-    this.defaultTime = Transform.config.defaultTime;
-    this.el.style.transition = `all ${this.defaultTime / 1000}s`;
-
+    this.init() // 初始化DOM
+    this.el.style.transition = `all ${ .3 }s` // 设置默认过渡动画时间
   }
   init() {
     const div = document.createElement('div')
@@ -27,105 +24,55 @@ class Transform {
     this.el = div
   }
   translate(value, time) {
-    return this._add('translate', value, time);
-  }
-
-  /**
-   * 缩放
-   * @param {*} value
-   * @param {*} time
-   */
-  scale(value, time) {
-    return this._add('scale', value, time);
-  }
-
-  /**
-   * 旋转
-   * @param {*} value
-   * @param {*} time
-   */
+    return this._add('translate', value, time)
+  }// 移动
   rotate(value, time) {
-    return this._add('rotate', value, time);
-  }
-
-  /**
-   * 添加动画步骤到队列
-   * @param {*} type
-   * @param {*} value
-   * @param {*} time
-   */
-  _add(type, value, time = this.defaultTime) {
+    return this._add('rotate', value, time)
+  }// 旋转
+  scale(value, time) {
+    return this._add('scale', value, time)
+  }// 缩放
+  _add(type, value, time) {
     this._queue.push({
       type,
       value,
       time
-    });
-
-    return this;
-  }
-
-  /**
-   * 添加结束
-   */
-  done() {
-    this._start();
-  }
-
-  /**
-   * 调用队列中的形变
-   */
-  _start() {
+    })
+    return this
+  } // 将动画存入队列
+  start() {
     if (!this._queue.length) return;
-
     setTimeout(() => {
-      const info = this._queue.shift();
+      const info = this._queue.shift(); // 获得队首元素
       this.el.style.transition = `all ${info.time / 1000}s`;
-      console.log(this._getTransform(info))
-      this.el.style.transform = this._getTransform(info);
-
+      this.el.style.transform = this.getTransform(info) // 执行队首元素
       setTimeout(() => {
-        this._start();
+        this.start();
       }, info.time);
-    }, 0);
-  }
-
-  /**
-   * 根据队列中的内容返回transform结果
-   * @param {*} param0
-   */
-  _getTransform({ type, value, time }) {
+    },0)
+    // setTimeout 用于消除有时候浏览器渲染问题
+  } // 利用动画队列顺序开始执行动画
+  getTransform({ type, value, time }) {
     const _tsf = this._transform;
-
     switch (type) {
       case 'translate':
-        _tsf.translate = `translate(${value})`;
+        _tsf.translate = `translate(${ value })`
         break;
-
       case 'scale':
-        _tsf.scale = `scale(${value})`;
+        _tsf.scale = `scale(${ value })`
         break;
-
       case 'rotate':
-        _tsf.rotate = `rotate(${value}deg)`;
+        _tsf.rotate = `rotate(${ value }deg)`
         break;
     }
-    console.log(_tsf.scale)
-    return `${_tsf.translate}${_tsf.scale}${_tsf.rotate}`;
-  }
-}
-Transform.defaultConfig = {
-  defaultTime: 300
-};
-
-
-Transform.config = Object.assign({}, Transform.defaultConfig);
-
-
-Transform.resetConfig = () => {
-  Transform.config = Object.assign({}, Transform.defaultConfig);
+    return `${_tsf.translate}${_tsf.scale}${_tsf.rotate}`
+  } // 获得动画以及其参数
 }
 const a = new Transform()
-Transform.config.defaultTime = 600;
-
-a.translate('200px, 200px')
-  .done()
+document.querySelector('.ball').addEventListener('click', () => {
+  a.translate('100px, 300px', 1000)
+    .rotate(180, 1000)
+    .scale(2, 1000)
+    .translate('200px, 200px', 1000)
+    .start()
+})

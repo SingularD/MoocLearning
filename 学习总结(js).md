@@ -1,5 +1,122 @@
 # ES6 #
 
+## JavaScript常用方法总结
+
+### 遍历
+
+#### 数组
+
+1. for循环遍历，常用于遍历数组：
+
+   ```Js
+   const arr = [1, 2, 3, 4];
+   for(let i = 0; i < arr.length; i++) {
+       console.log(arr[i])
+   }
+   ```
+
+2. every：对数组中的每一个元素运行指定函数，全部为true返回true
+
+   filter：对数组中的每一个元素运行指定函数，返回该函数返回值为true的元素组成的数组
+
+   some：对数组中的每一个元素运行指定函数，只要有一个元素返回true则返回true
+
+   ```Js
+   let arr = [1, 2, 3, 4, 5];
+   const everyResult = arr.every((item) => {
+       return (item > 2)
+   }) // everyResult为true
+
+   const someResult = arr.some((item) => {
+       return (item > 2)
+   }) // someResult为false
+
+   const filterResult = arr.filter((item) => {
+       return (item > 2)
+   }) // filterResult为[3, 4, 5]
+   ```
+
+3. foreach方法用于对每一个元素来运行指定函数，没有返回值
+
+   map和foreach差不多，但是有返回值
+
+   ```Js
+   let arr = [1, 2, 3]
+
+   const mapResult = arr.map((item) => {
+       return item*2
+   }) // mapResult值[2, 4, 6]
+
+   arr.foreach((item) => {
+       // ...
+       // ...
+       // ...
+   })
+   ```
+
+4. for…in 和 for...of方法
+
+   for…in相当于获取键名，在数组中就是获取了元素下标
+
+   在数组中for…of方法效果和foreach是一样的，但是在对象中不能使用，之后在对象的遍历中我们提到
+
+   ```Js
+   let arr = [1, 2, 3, 4];
+   for(let x in arr) {
+       console.log(x)
+   }// 在数组中使用for...in，x是元素下标
+   // 上述代码结果0，1，2，3
+   for(let x of arr) {
+       console.log(x)
+   }// 和foreach一样，结果为1, 2, 3, 4
+   ```
+
+
+
+#### 对象
+
+for…in ， for…of 
+
+for…in方法遍历的键名
+
+for…of只能遍历一个数组，这个时候我们使用keys()和value()方法来转化对象进行遍历
+
+Object.keys(obj),Object.values(obj)这两个方法用于提取对象中键和值分别组成的数组
+
+先对比一下
+
+```Js
+const object = {
+    name: 'lisongwei',
+    age: 14,
+    sex: man,
+    hobby: '学习',
+    girlfriend: true
+}
+
+for(let x in object) {
+    console.log(x, object[x])
+} 
+// name lisongwei
+//age 14
+//sex man
+//hobby 学习
+//girlfriend true
+
+for(let x of Object.keys(object)){
+    console.log(x)
+}// name age sex hobby girlfriend
+for(let x of Object.values(object)) {
+    console.log(x)
+}// lisongwei 14 man 学习 true
+```
+
+
+
+
+
+
+
 ### let 与 const 
 
 #### let
