@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .test{
+            width: 200px;
+            height: 200px;
+            /*background-color: #1d5fac;*/
+            background: linear-gradient(#80b7ff 50%, darksalmon 50%);
+            border-radius: 50%;
+            transform: translate(300px, 300px);
+            transition: all ease-in 3s;
+        }
+
+    </style>
+</head>
+<body>
+<div class="test"></div>
+<script>
+  (function (document, window) {
+    const changePosition = (x, y, r) => {
+      document.querySelector('.test').style.transform =
+        `translate(${x}px,${y}px) rotate(${r}deg) scale(2, 2)`
+    }
+    document.querySelector('.test').addEventListener('click', () => {
+      changePosition(500, 800, 180)
+    })
+  })(document, window)
+</script>
+</body>
+</html>
