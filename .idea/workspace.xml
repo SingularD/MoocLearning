@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2e7427b5-11fe-4192-b687-87501d3111f2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/Animation/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/Animation/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/动画练习/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/动画练习/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,37 +17,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/动画练习/index.html">
+        <entry file="file://$PROJECT_DIR$/ES6/imgsCategory/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="243">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/imgsCategory/assets/js/data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/imgsCategory/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1219">
+              <caret line="185" column="1" selection-start-line="185" selection-start-column="1" selection-end-line="185" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ES6/动画练习/main.js">
+        <entry file="file://$PROJECT_DIR$/ES6/imgsCategory/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/Animation/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/Animation/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="1705">
+              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
             </state>
           </provider>
         </entry>
@@ -101,6 +99,12 @@
         <option value="$PROJECT_DIR$/ES6/动画练习/index.html" />
         <option value="$PROJECT_DIR$/ES6/Animation/app.js" />
         <option value="$PROJECT_DIR$/ES6/动画练习/main.js" />
+        <option value="$PROJECT_DIR$/ES6/imgsCategory/style.css" />
+        <option value="$PROJECT_DIR$/ES6/imgsCategory/main.js" />
+        <option value="$PROJECT_DIR$/ES6/imgsCategory/asset/js/main.js" />
+        <option value="$PROJECT_DIR$/ES6/imgsCategory/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/ES6/imgsCategory/index.html" />
+        <option value="$PROJECT_DIR$/ES6/imgsCategory/assets/js/main.js" />
       </list>
     </option>
   </component>
@@ -120,7 +124,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="73" />
+    <option name="x" value="72" />
     <option name="y" value="23" />
     <option name="width" value="1259" />
     <option name="height" value="1417" />
@@ -150,13 +154,7 @@
               <item name="mooc" type="b2602c69:ProjectViewProjectNode" />
               <item name="mooc" type="462c0819:PsiDirectoryNode" />
               <item name="ES6" type="462c0819:PsiDirectoryNode" />
-              <item name="Animation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mooc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mooc" type="462c0819:PsiDirectoryNode" />
-              <item name="ES6" type="462c0819:PsiDirectoryNode" />
-              <item name="动画练习" type="462c0819:PsiDirectoryNode" />
+              <item name="imgsCategory" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,7 +173,14 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ES6/imgsCategory/asset/js" />
+      <recent name="$PROJECT_DIR$/ES6/imgsCategory/asset" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ES6/imgsCategory/asset" />
+      <recent name="$PROJECT_DIR$/ES6/imgsCategory/asset/js" />
+      <recent name="$PROJECT_DIR$/ES6/imgsCategory/asset/css" />
       <recent name="$PROJECT_DIR$/ES6/弹框" />
     </key>
   </component>
@@ -193,7 +198,7 @@
   </component>
   <component name="RunManager" selected="Node.js.app.js">
     <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/ES6/changeThisPoint" />
-    <configuration name="mian.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="mian.js" working-dir="$PROJECT_DIR$/ES6/iteration" />
+    <configuration name="mian.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/ES6/imgsCategory/asset/css/iteration/mian.js" working-dir="$PROJECT_DIR$/ES6/imgsCategory/asset/css/iteration" />
     <list>
       <item itemvalue="Node.js.mian.js" />
       <item itemvalue="Node.js.app.js" />
@@ -222,15 +227,15 @@
       <workItem from="1553222555289" duration="307000" />
       <workItem from="1553223008436" duration="285000" />
       <workItem from="1553563179896" duration="6326000" />
-      <workItem from="1553592659830" duration="7849000" />
+      <workItem from="1553592659830" duration="13096000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56121000" />
+    <option name="totallyTimeSpent" value="61368000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="23" width="1259" height="1417" extended-state="0" />
+    <frame x="72" y="23" width="1259" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1542811" />
@@ -507,6 +512,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1026">
           <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -534,10 +542,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/Animation/index.html">
+    <entry file="file://$PROJECT_DIR$/ES6/动画练习/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state relative-caret-position="576">
+          <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -548,10 +556,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/动画练习/main.js">
+    <entry file="file://$PROJECT_DIR$/ES6/Animation/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state relative-caret-position="189">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/imgsCategory/assets/js/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/imgsCategory/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1219">
+          <caret line="185" column="1" selection-start-line="185" selection-start-column="1" selection-end-line="185" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/imgsCategory/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/imgsCategory/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1705">
+          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
         </state>
       </provider>
     </entry>
