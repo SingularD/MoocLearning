@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2e7427b5-11fe-4192-b687-87501d3111f2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习总结(HTML,CSS).md" beforeDir="false" afterPath="$PROJECT_DIR$/学习总结(HTML,CSS).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES6/Animation/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/Animation/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES6/动画练习/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/动画练习/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,18 +18,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/动画练习/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="513">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/动画练习/style.css">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ES6/动画练习/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/Animation/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/Animation/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -36,9 +59,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -68,7 +91,6 @@
         <option value="$PROJECT_DIR$/ES6/test5/main.js" />
         <option value="$PROJECT_DIR$/ES6/Animation/main.js" />
         <option value="$PROJECT_DIR$/ES6/Animation/index.html" />
-        <option value="$PROJECT_DIR$/ES6/Animation/app.js" />
         <option value="$PROJECT_DIR$/ES6/imgDrag/index.html" />
         <option value="$PROJECT_DIR$/ES6/test6/index.html" />
         <option value="$PROJECT_DIR$/ES6/test6/main.js" />
@@ -77,6 +99,8 @@
         <option value="$PROJECT_DIR$/ES6/changeThisPoint/app.js" />
         <option value="$PROJECT_DIR$/ES6/动画练习/style.css" />
         <option value="$PROJECT_DIR$/ES6/动画练习/index.html" />
+        <option value="$PROJECT_DIR$/ES6/Animation/app.js" />
+        <option value="$PROJECT_DIR$/ES6/动画练习/main.js" />
       </list>
     </option>
   </component>
@@ -96,10 +120,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="72" />
-    <option name="y" value="216" />
+    <option name="x" value="73" />
+    <option name="y" value="23" />
     <option name="width" value="1259" />
-    <option name="height" value="877" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -121,6 +145,12 @@
               <item name="mooc" type="b2602c69:ProjectViewProjectNode" />
               <item name="mooc" type="462c0819:PsiDirectoryNode" />
               <item name="ES6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mooc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mooc" type="462c0819:PsiDirectoryNode" />
+              <item name="ES6" type="462c0819:PsiDirectoryNode" />
+              <item name="Animation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mooc" type="b2602c69:ProjectViewProjectNode" />
@@ -192,15 +222,15 @@
       <workItem from="1553222555289" duration="307000" />
       <workItem from="1553223008436" duration="285000" />
       <workItem from="1553563179896" duration="6326000" />
-      <workItem from="1553592659830" duration="3361000" />
+      <workItem from="1553592659830" duration="7849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51633000" />
+    <option name="totallyTimeSpent" value="56121000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="72" y="216" width="1259" height="877" extended-state="0" />
+    <frame x="73" y="23" width="1259" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1542811" />
@@ -452,27 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/Animation/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/Animation/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/Animation/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ES6/imgDrag/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -508,13 +517,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/Animation/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ES6/动画练习/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ES6/动画练习/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="513">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/Animation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/Animation/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/动画练习/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
         </state>
       </provider>
     </entry>

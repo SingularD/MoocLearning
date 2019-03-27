@@ -44,8 +44,10 @@ class Transform {
     if (!this._queue.length) return;
     setTimeout(() => {
       const info = this._queue.shift(); // 获得队首元素
+      console.log(info)
       this.el.style.transition = `all ${info.time / 1000}s`;
       this.el.style.transform = this.getTransform(info) // 执行队首元素
+      console.log(this.el.style.transform)
       setTimeout(() => {
         this.start();
       }, info.time);
