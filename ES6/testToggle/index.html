@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            position: relative;
+            background-color: #eeeeee;
+            display: inline-block;
+        }
+        .wrap{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 2px solid;
+            background-color: #80b7ff;
+            transform: scale(1, 0);
+            transform-origin: top;
+            opacity: 0;
+            transition: all 3s;
+        }
+    </style>
+</head>
+<body>
+<div style="width: 200px; height: 200px;background-color: #ff8080">
+    <ul style="list-style: none">
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+    </ul>
+</div>
+<script>
+  (function (window, document) {
+    let container = document.createElement('div')
+    container.className = 'container'
+    document.body.appendChild(container)
+
+    let wrap = document.createElement('div')
+    wrap.className = 'wrap'
+    container.appendChild(wrap)
+
+    let btn = document.createElement('button')
+    btn.className = 'btn'
+    btn.innerText = 'Click me!'
+    container.appendChild(btn)
+
+    document.querySelector('.btn').addEventListener('click', () => {
+      document.querySelector('.wrap').style.transform = 'scale(1, 1)'
+      document.querySelector('.wrap').style.opacity = '1'
+    })
+  })(window, document)
+</script>
+</body>
+</html>

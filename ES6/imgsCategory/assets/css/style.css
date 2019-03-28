@@ -170,7 +170,7 @@ body {
 
 .__Img__overlay .__Img__overlay-prev-btn:active,
 .__Img__overlay .__Img__overlay-next-btn:active {
-    background: rgb(241, 241, 241, .4);
+    background: rgb(241, 241, 241);
 }
 
 .__Img__overlay .__Img__overlay-next-btn::after {

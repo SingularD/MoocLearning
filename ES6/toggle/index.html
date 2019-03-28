@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="wrap">
+    <div style="text-align: center">
+        <div class="title">自定义select</div>
+        <div class="select">
+            <div class="select-tab">
+                <input class="select-show-tab" type="text">
+                <img class="select-tab-toggle" src="./assets/imgs/toggle.png" alt="">
+            </div>
+            <div class="select-options" style="transform: scale(1 ,0); transform-origin: top">
+                <ul class="options options-one">
+                    <li class="options-one-title">标题一</li>
+                    <li class="options-one-item">asfasf</li>
+                    <li class="options-one-item">asfasf</li>
+                    <li class="options-one-item">egasgw</li>
+
+                </ul>
+                <ul class="options options-two">
+                    <li class="options-two-title">标题二</li>
+                    <li class="options-two-item">ashgfia</li>
+                    <li class="options-two-item">asfgaa</li>
+                    <li class="options-two-item">gkrkf</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="previous-option-value"></div>
+            <div class="now-option-value"></div>
+        </div>
+    </div>
+    <!--<div style="text-align: center;margin-top: 60px;">-->
+        <!--<div class="title1">原生select</div>-->
+        <!--<select>-->
+            <!--<option value="1" type="构建工具">Babel</option>-->
+            <!--<option value="2" type="构建工具">Webpack</option>-->
+            <!--<option value="3" type="构建工具">Rollup</option>-->
+            <!--<option value="4" type="前端框架">Vue</option>-->
+            <!--<option value="5" type="前端框架">Angular</option>-->
+            <!--<option value="6" type="前端框架">React</option>-->
+            <!--<option value="7" type="前端框架">Nerv</option>-->
+        <!--</select>-->
+    <!--</div>-->
+</div>
+
+<script src="./assets/js/data.js"></script>
+<script src="./assets/js/main.js"></script>
+<script>
+    new CustomSelect(data)
+    document.querySelector('.select-tab-toggle').addEventListener('click', () => {
+      document.querySelector('.select-options').style.transform = 'scale(1, 1)';
+      document.querySelector('.select-options').style.transition = 'all .6s'
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    font-size: 20px;
+}
+.select-tab{
+    height: 30px;
+    display: inline-block;
+}
+.select-show-tab{
+    float: left;
+    width: 200px;
+    height: 26px;
+    padding: 0;
+}
+.select-tab-toggle{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #80b7ff;
+}
+.options{
+    /*position: absolute;*/
+    text-align: left;
+    left: 20px;
+}
+.select-options{
+    width: 230px;
+    height: 200px;
+    border: 1px solid;
+    border-top: none;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    overflow: auto;
+}
