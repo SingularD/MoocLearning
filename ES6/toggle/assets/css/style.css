@@ -8,18 +8,27 @@ li{
 .selector{
     text-align: center;
 }
-
 .selector-show-tab{
     width: 250px;
     height: 30px;
     margin: 0 auto;
     border: #80b7ff 2px solid;
 }
+.selector-show-text{
+    width: 100px;
+    line-height: 30px;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+}
 .selector-toggle-icon{
     float: right;
     width: 30px;
     height: 30px;
     background-color: #80b7ff;
+}
+.selector-toggle-icon:hover{
+    cursor: pointer;
 }
 .selector-content{
     width: 250px;
@@ -44,4 +53,12 @@ li{
     padding-left: 30px;
     line-height: 30px;
     padding-top: 3px;
+}
+.selector-content-search{
+    width: 200px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.selector-options-item-active{
+    background-color: #80b7ff;
 }

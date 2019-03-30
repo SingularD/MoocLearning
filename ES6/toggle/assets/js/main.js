@@ -14,9 +14,9 @@ methods = {
 
 class CustomSelect {
   constructor(options) {
-    this.curToggle = false
-    this.classify = {}
-
+    this.curToggle = false;
+    this.classify = {};
+    this.lastClick = undefined;
 
     this._init(options);
     this._createElement();
@@ -57,30 +57,72 @@ class CustomSelect {
 
   _bind() {
     methods.$('.selector-content').addEventListener('mouseover', ({target}) => {
-      if (target.nodeName === 'LI' || target.parentNode.nodeName === 'LI') {
+      if (target.parentNode.nodeName === 'LI') target = target.parentNode
+      if (target.nodeName === 'LI') {
         target.style.backgroundColor = 'grey'
         target.style.cursor = 'pointer'
       }
     })
     methods.$('.selector-content').addEventListener('mouseout', ({target}) => {
-      if (target.nodeName === 'LI' || target.parentNode.nodeName === 'LI') {
+      if (target.parentNode.nodeName === 'LI') target = target.parentNode
+      if (target.nodeName === 'LI') {
         target.style.backgroundColor = ''
         target.style.cursor = ''
       }
     })
-    methods.$('.selector-toggle-icon').addEventListener('click', () => {
-      this.curToggle = !this.curToggle
+    methods.$('.selector-content').addEventListener('click', ({target}) => {
+      // if (target.parentNode.nodeName === 'LI') target = target.parentNode
+      if (target.nodeName === 'LI' || target.parentNode.nodeName === 'LI') {
+        methods.$$('.selector-options-item').forEach( item => {
+          item.className = `selector-options-item`
+        })
 
+        let num = 0;
+        methods.$$('li').forEach((item, index) => {
+          if (item === target || item === target.parentNode) num = index + 1
+        })
+
+
+        methods.$('.selector-message').innerHTML = `
+          <p>之前选择的是： ${ this.lastClick }</p>
+          <p>当前选择的是：${target.innerText} - ${num}</p>
+        `
+        this.lastClick = target.innerText
+      }
+    })
+    methods.$('.selector-content-search').addEventListener('input',
+      ({target}) => {
+        methods.$$('li').forEach(item => {
+          if (!item.innerText.includes(target.value)
+            && !item.innerText.toLowerCase().includes(target.value)
+            && !item.innerText.toUpperCase().includes(target.value)
+          ) {
+            item.style.display = 'none'
+          }else {
+            item.style.display = 'block'
+          }
+        })
+      }
+      )
+    window.addEventListener('click', ({target}) => {
+      if (target === methods.$('.selector-content-search')) return
+      if (target !== methods.$('.selector-toggle-icon')) {
+        methods.$('.selector-content').style.transform = 'scale(1, 0)'
+        this.curToggle = false
+      }
+    })
+
+  }
+
+  _show() {
+    methods.$('.selector-toggle-icon').addEventListener('click', (e) => {
+      this.curToggle = !this.curToggle
       if (this.curToggle) {
         methods.$('.selector-content').style.transform = 'scale(1, 1)'
       } else {
         methods.$('.selector-content').style.transform = 'scale(1, 0)'
       }
-
+      e.stopPropagation()
     })
-  }
-
-  _show() {
-
   }
 }
