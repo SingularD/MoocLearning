@@ -7,24 +7,15 @@
 </head>
 <body>
 <div class="wrap">
-    <div style="text-align: center">
-        <div class="title">自定义select</div>
-        <div class="select">
-            <div class="select-tab">
-                <input class="select-show-tab" type="text">
-                <img class="select-tab-toggle" src="./assets/imgs/toggle.png" alt="">
-            </div>
-            <div class="select-options" style="transform: scale(1 ,0); transform-origin: top">
-                <!--<ul class="options ">-->
-                    <!--<li class="options-item options-title"></li>-->
-                <!--</ul>-->
-            </div>
+    <div class="selector">
+        <div class="selector-title">自定义select</div>
+        <div class="selector-input">
+            <div class="selector-show-tab">
+            <img class="selector-toggle-icon" src="./assets/imgs/toggle.png" alt="toggle">
         </div>
-        <div>
-            <div class="previous-option-value"></div>
-            <div class="now-option-value"></div>
-        </div>
+        <div class="selector-content"></div>
     </div>
+
     <!--<div style="text-align: center;margin-top: 60px;">-->
         <!--<div class="title1">原生select</div>-->
         <!--<select>-->
@@ -42,11 +33,7 @@
 <script src="./assets/js/data.js"></script>
 <script src="./assets/js/main.js"></script>
 <script>
-    new CustomSelect(data)
-    document.querySelector('.select-tab-toggle').addEventListener('click', () => {
-      document.querySelector('.select-options').style.transform = 'scale(1, 1)';
-      document.querySelector('.select-options').style.transition = 'all .6s'
-    })
+new CustomSelect(data)
 </script>
 </body>
 </html>

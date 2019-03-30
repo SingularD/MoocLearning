@@ -1,6 +1,6 @@
-const methods = {
+methods = {
   appendChild(parent, ...children) {
-    children.forEach(item => {
+    children.forEach((item) => {
       parent.appendChild(item)
     })
   },
@@ -8,58 +8,76 @@ const methods = {
     return root.querySelector(selector)
   },
   $$(selector, root = document) {
-    return root.querySelectorAll(selector)
+    return [...root.querySelectorAll(selector)]
   }
 } // 公共方法
+
 class CustomSelect {
-  constructor(data) {
-    this.categories = {};
-    this.liList = []
-    this._init(data); // 初始化数据
-    this._createElement(); // 生成元素
-    this._bind(); // 绑定事件
-    this._show(); // 元素展示
+  constructor(options) {
+    this.curToggle = false
+    this.classify = {}
+
+
+    this._init(options);
+    this._createElement();
+    this._bind();
+    this._show();
   }
 
   _init(data) {
-    data.forEach(({type, text, value}) => {
-      if (!Object.keys(this.categories).includes(type)) {
-        this.categories[type] = []
+    data.forEach((item) => {
+      if (!Object.keys(this.classify).includes(item.type)) {
+        this.classify[item.type] = []
       }
-      this.categories[type].push(value)
+      this.classify[item.type].push(item.text)
     })
+    console.log(this.classify)
+
   }
 
   _createElement() {
-    let selectOptions = methods.$('.select-options')
-    for (let key of Object.keys(this.categories)) {
+    for (let key in this.classify) {
+      let title = document.createElement('h2')
+      title.className = 'selector-options-title'
+      title.innerText = `${key}`
+      methods.appendChild(methods.$('.selector-content'), title)
 
-      if (!this.liList.includes(key)) {
 
-        let ul = document.createElement('ul')
-        ul.className = 'options'
+      let liList = []
+      let ul = document.createElement('ul')
+      ul.className = 'selector-options-group'
 
-        let liArr = []
-        this.categories[key].forEach((value) => {
-          liArr.push(`<li class="options-item">${data[parseInt(value) - 1].text}</li>`)
-        })
-
-        ul.innerHTML = `<li class="options-item options-title"><h3>${key}</h3></li>${liArr.join('')}`
-
-        methods.appendChild(selectOptions, ul)
-
-      }
+      this.classify[key].forEach(item => {
+        liList.push(`<li><div class="selector-options-item">${item}</div></li>`)
+      })
+      ul.innerHTML = liList.join('')
+      methods.appendChild(methods.$('.selector-content'), ul)
     }
-    console.log(methods.$$('.options-title'))
-    methods.$$('.options-title').forEach( item => {
-      item.style.marginLeft = '0px'
-    })
-    methods.$$('.options-item').forEach( item => {
-      item.style.marginLeft = '30px'
-    })
   }
-  _bind() {
 
+  _bind() {
+    methods.$('.selector-content').addEventListener('mouseover', ({target}) => {
+      if (target.nodeName === 'LI' || target.parentNode.nodeName === 'LI') {
+        target.style.backgroundColor = 'grey'
+        target.style.cursor = 'pointer'
+      }
+    })
+    methods.$('.selector-content').addEventListener('mouseout', ({target}) => {
+      if (target.nodeName === 'LI' || target.parentNode.nodeName === 'LI') {
+        target.style.backgroundColor = ''
+        target.style.cursor = ''
+      }
+    })
+    methods.$('.selector-toggle-icon').addEventListener('click', () => {
+      this.curToggle = !this.curToggle
+
+      if (this.curToggle) {
+        methods.$('.selector-content').style.transform = 'scale(1, 1)'
+      } else {
+        methods.$('.selector-content').style.transform = 'scale(1, 0)'
+      }
+
+    })
   }
 
   _show() {
