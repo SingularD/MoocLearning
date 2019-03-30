@@ -7,6 +7,11 @@ li{
 }
 .selector{
     text-align: center;
+    margin-top: 100px;
+}
+.selector-title{
+    margin-bottom: 30px;
+    color: #80b7ff;
 }
 .selector-show-tab{
     width: 250px;
@@ -40,6 +45,8 @@ li{
     transition: all .3s;
     transform-origin: top;
     transform: scale(1, 0);
+    box-shadow: 3px 3px 2px #999999;
+
 }
 .selector-options-title{
     text-align: left;

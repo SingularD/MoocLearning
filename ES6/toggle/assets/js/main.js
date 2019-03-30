@@ -14,16 +14,21 @@ methods = {
 
 class CustomSelect {
   constructor(options) {
-    this.curToggle = false;
-    this.classify = {};
-    this.lastClick = undefined;
+    this.curToggle = false; // 下拉框是否显示
+    this.classify = {}; // 将要展示的数据以键值对的形式储存,键名:'type',值:'text'
+    this.lastClick = undefined; // 上一个点击的内容
 
-    this._init(options);
-    this._createElement();
-    this._bind();
-    this._show();
+    this._init(options); // 初始化，分类数据
+    this._createElement(); // 添加元素
+    this._bind(); // 绑定监听事件
+    this._show(); // 下拉框动画
   }
 
+  /**
+   * 将data.js中的数据进行分类，分类好的数据在this.classify中
+   * @param data
+   * @private
+   */
   _init(data) {
     data.forEach((item) => {
       if (!Object.keys(this.classify).includes(item.type)) {
@@ -35,6 +40,10 @@ class CustomSelect {
 
   }
 
+  /**
+   * 将分类好的数据，生成对应的元素放在相应的位置
+   * @private
+   */
   _createElement() {
     for (let key in this.classify) {
       let title = document.createElement('h2')
@@ -55,6 +64,14 @@ class CustomSelect {
     }
   }
 
+  /**
+   * 主要的几个监听事件
+   * 鼠标滑过时改变背景颜色
+   * 点击时改变背景颜色和将点击的内容以及上一次点击的内容展示
+   * 搜索框改变时对应展示元素
+   * 当点击下拉按钮以外的地方，关闭下拉框
+   * @private
+   */
   _bind() {
     methods.$('.selector-content').addEventListener('mouseover', ({target}) => {
       if (target.parentNode.nodeName === 'LI') target = target.parentNode
@@ -114,6 +131,10 @@ class CustomSelect {
 
   }
 
+  /**
+   * 下拉框开启和关闭时候的动画
+   * @private
+   */
   _show() {
     methods.$('.selector-toggle-icon').addEventListener('click', (e) => {
       this.curToggle = !this.curToggle

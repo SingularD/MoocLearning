@@ -7,32 +7,38 @@
 </head>
 <body>
 <div class="wrap">
+    <!--整个组件容器-->
     <div class="selector">
+        <!--组件标题-->
         <div class="selector-title">自定义select</div>
+        <!--组件展示框和下拉按钮-->
         <div class="selector-input">
             <div class="selector-show-tab">
                 <div class="selector-show-text"></div>
                 <img class="selector-toggle-icon" src="./assets/imgs/toggle.png" alt="toggle">
             </div>
         </div>
+        <!--组件的下拉框-->
         <div class="selector-content">
+            <!--组件的搜索框-->
             <input class="selector-content-search" type="text">
         </div>
+        <!--组件点击后展示信息，包括上次点击的内容和该次点击的索引-->
         <div class="selector-message"></div>
     </div>
 
-    <!--<div style="text-align: center;margin-top: 60px;">-->
-        <!--<div class="title1">原生select</div>-->
-        <!--<select>-->
-            <!--<option value="1" type="构建工具">Babel</option>-->
-            <!--<option value="2" type="构建工具">Webpack</option>-->
-            <!--<option value="3" type="构建工具">Rollup</option>-->
-            <!--<option value="4" type="前端框架">Vue</option>-->
-            <!--<option value="5" type="前端框架">Angular</option>-->
-            <!--<option value="6" type="前端框架">React</option>-->
-            <!--<option value="7" type="前端框架">Nerv</option>-->
-        <!--</select>-->
-    <!--</div>-->
+    <div style="text-align: center;margin-top: 60px;">
+        <div class="title1">原生select</div>
+        <select>
+            <option value="1" type="构建工具">Babel</option>
+            <option value="2" type="构建工具">Webpack</option>
+            <option value="3" type="构建工具">Rollup</option>
+            <option value="4" type="前端框架">Vue</option>
+            <option value="5" type="前端框架">Angular</option>
+            <option value="6" type="前端框架">React</option>
+            <option value="7" type="前端框架">Nerv</option>
+        </select>
+    </div>
 </div>
 
 <script src="./assets/js/data.js"></script>
