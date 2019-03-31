@@ -2,6 +2,40 @@
 
 # CSS
 
+### Sass
+
+变量声明赋值：  `$`+`变量名`:`变量值`；
+
+字符串拼接和js类似，可以用引号和加号拼接，也可以用`#{$变量名}`的形式，类似ES6中模板字符串，只不过花括号外面是#。
+
+在CSS中也是可以不用区分单引号和双引号。
+
+```Css
+$width: 100px;
+$height: 200px;
+$imgName: hello.jpg;
+$className: div2
+
+.div{
+    width: $windth;
+    height: $height;
+    background-image: url("./imgs/" + $imgName);
+    // background-image: url("./imgs/#{$imgName}"); 与上面作用一样
+}
+
+.#{className} {
+    ...
+    ...
+    ...
+}
+```
+
+
+
+
+
+
+
 ### css动画属性
 
 #### transform 形变

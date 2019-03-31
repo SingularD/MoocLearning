@@ -1,0 +1,12 @@
+@import "base";
+$width: 200px;
+$height: 100px;
+$backgroundColor: red;
+
+.container{
+  width: $width;
+  height: $height;
+  background-color: $backgroundColor;
+  $textColor: white;
+  color: $textColor;
+}

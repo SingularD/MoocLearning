@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input onblur="change()" class="input" type="text">
+<h1 class="info">hhhhhhh</h1>
+<script>
+const change = () => {
+  let value = document.querySelector('.input').value
+  document.querySelector('.info').innerText = value
+}
+</script>
+</body>
+</html>

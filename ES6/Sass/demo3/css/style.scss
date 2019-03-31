@@ -1,0 +1,12 @@
+$num1: 100px;
+$num2: 100px;
+$backgroundColor: red;
+@import "base";
+.container{
+  width: $num1;
+  height: $num1;
+  background-color: $backgroundColor;
+}
+.container:hover{
+  width: $num1 + $num2;
+}

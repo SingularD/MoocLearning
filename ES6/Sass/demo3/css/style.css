@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: red; }
+
+.container:hover {
+  width: 200px; }
+
+/*# sourceMappingURL=style.css.map */

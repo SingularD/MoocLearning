@@ -1,0 +1,13 @@
+$color: #f1f;
+$black: #000;
+.div{
+  background-color: $color;
+  width: 100px;
+  height: 100px;
+}
+.div2{
+  width: 100px;
+  height: 100px;
+  background-color: $black;
+  background-image: url("");
+}
