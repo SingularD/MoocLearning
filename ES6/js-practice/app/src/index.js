@@ -1,18 +1,9 @@
-import _ from 'lodash';
-function component() {
-  let element = document.createElement('div');
-      element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  return element;
-}
-function header() {
-  let div = document.createElement('div');
-  div.innerHTML = `<h1>我是李松蔚</h1>`;
-  return div;
-}
+import './style/style.scss'
+import {data} from './data.js'
+import {PassageList} from './components/PassageList'
 
-document.querySelector('.cl').addEventListener('click', () => {
-  alert('lisongwei')
-})
-
-document.body.appendChild(header());
-document.body.appendChild(component());
+const $ = (selector, root = document) => {
+  return root.querySelector(selector)
+}
+const list = new PassageList(data)
+$('.main-left').appendChild(list.element)
