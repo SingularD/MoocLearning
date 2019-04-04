@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2e7427b5-11fe-4192-b687-87501d3111f2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/js-practice/app/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/app/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/js-practice/app/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/app/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/js-practice/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/js-practice/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/js-practice/app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/js-practice/app/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/app/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习总结(HTML,CSS).md" beforeDir="false" afterPath="$PROJECT_DIR$/学习总结(HTML,CSS).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES6/js-practice/api/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/api/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES6/js-practice/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES6/js-practice/api/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/api/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="540">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -34,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -43,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            <state relative-caret-position="216">
+              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -122,8 +118,8 @@
         <option value="$PROJECT_DIR$/ES6/js-practice/app/src/data.js" />
         <option value="$PROJECT_DIR$/ES6/js-practice/api/idnex.html" />
         <option value="$PROJECT_DIR$/ES6/js-practice/api/index.html" />
-        <option value="$PROJECT_DIR$/ES6/js-practice/api/server.js" />
         <option value="$PROJECT_DIR$/ES6/js-practice/api/index.js" />
+        <option value="$PROJECT_DIR$/ES6/js-practice/api/server.js" />
       </list>
     </option>
   </component>
@@ -186,12 +182,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.9.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ES6/js-practice/app/src/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -268,18 +265,18 @@
       <workItem from="1554212198792" duration="1794000" />
       <workItem from="1554215190433" duration="181000" />
       <workItem from="1554215383345" duration="6095000" />
-      <workItem from="1554277423012" duration="13341000" />
+      <workItem from="1554277423012" duration="22846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127494000" />
+    <option name="totallyTimeSpent" value="136999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="23" width="1259" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20436187" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13408723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -292,7 +289,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32948717" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32948717" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.24679245" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -611,24 +608,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/index.js">
+    <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="216">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/index.html">
+    <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        <state relative-caret-position="270">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="540">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
