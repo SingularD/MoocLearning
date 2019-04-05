@@ -69,3 +69,34 @@ jwt.verify(); // 验证token
 `localStorage.setItem(key, value) //存储` 
 
 `localStorage.getItem(key) // 读取` 
+
+
+
+### NodeJs Web服务器
+
+我们可以通过以下代码创建一个Node的Web服务器
+
+```js
+const http = require('http) // Node不支持import方式引入模块，若要用import则需插件
+
+http.createServer((req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*'); // 允许所有URL跨域访问
+    req.setEncoding('utf8'); // 设置编码格式
+    
+    body = '';
+    req.on('data', (chunk) => {
+        body += chunk
+    })
+    // 监听请求的数据
+    console.log(body) // body = ''
+    req.on('end', () => {
+        res.end(body)
+    })
+    // 监听请求完毕时触发响应，响应之前的请求数据
+})
+```
+
+如上述代码所示，我们建立了两个最基础的监听，一个是监听请求，一个是响应，但是特别需要注意一点，犹豫NodeJs的异步机制，我们在我们在请求和响应这两个监听的中间加上任何逻辑都不一定实惠按照我们的代码顺序执行,就如上述代码中的console.log，一定会输出空，因为Node是异步的，所以它会先执行console.log在执行监听请求的事件。在Node编程中，一定灵活使用回调和Promise对象，不然我们很难摸清楚它异步执行的顺序，还有就是在Node中的所有API都是支持回调函数的。
+
+### NodeJs EventEmitter
+

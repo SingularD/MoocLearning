@@ -336,7 +336,108 @@ promise.race([p1,p2,p3]).then(fn) //.all相当于且，.race相当于或，有�
 
 ```
 
+#### 巩固Promise对象
 
+通过一个动画实例来解析回调和Promise，首先我们用传统回调来写一个方块移动的动画
+
+```js
+let div = document.createElement('div')
+div.className = 'div'
+
+div.innerText = '哦'
+document.body.appendChild(div)
+
+let btn = document.createElement('button')
+btn.className = 'btn'
+
+btn.innerText = 'Click me!'
+document.body.appendChild(btn)
+// 生成DOM元素
+```
+
+```Css
+.div{
+            width: 100px;
+            height: 100px;
+            background-color: #1d5fac;
+            font-size: 30px;
+            line-height: 100px;
+            text-align: center;
+            transition: all 1s;
+        }
+// 元素样式
+```
+
+```js
+// 用回调函数实现动画
+const moveTo = (el, x, y, callback) => {
+    el.style.transform = `translate(${x}px, ${y}px)`
+    setTimeout(() => {
+        callback && callback() // 这一步坚持是否有回调函数并执行
+    })
+}
+btn.addEventListener('click', e => {
+    moveTo(div, 100, 100, () => {
+        moveTo(div, 200, 200, () => {
+            moveTo(div, 300, 400, () => {
+                moveTo(div, 0, 0, () => {
+                    console.log('移动结束！')
+                })
+            })
+        })
+    })
+})
+```
+
+从上面代码我们可以看出我们在`moveTo`函数的参数中的最后一个添加了一个回调函数，调用回调函数的时候我们只能嵌套地调用，假如我们要修改其中一个嵌套函数的功能或者改变顺序，那将是一件很恼火的事情，在此之上，我们在使用Promise对象来实现上述功能；
+
+```js
+const moveTo = (el, x, y) => {
+    const promise = new Promise(resolve => {
+        el.style.transform = `translate(${x}px, ${y}px)`
+		setTimeout(() => {
+            reslove()
+		}, 1000)
+    })
+    return promise
+}
+btn.addEventListener('click', e => {
+    moveTo(div, 100, 100)
+        .then(() => {
+        	return moveTo(div, 200, 200)
+    })
+        .then(() => {
+        	return moveTo(div, 300, 400)
+    })
+        .then(() => {
+        	return moveTo(div, 0, 0)
+    })
+        .then(() => {
+        	console.log('移动结束！')
+    })
+})
+```
+
+我们先从最直观的角度来看：我们在moveTo函数中实例了Promise之后，返回了一个promise对象，然后这个moveTo函数就拥有了.then方法，这个方法就是我们在实例Promise的时候的resolve函数，就相当于之前的回调函数callback，我们现在可以用.then去调用。
+
+那么我们在详细地分析一下这个过程：
+
+首先我们声明了函数`moveTo`,在这个函数中，我们又实例了一个Promise类，并返回了实例后的对象promise，所以这就解释了我们为什么可以链式调用`moveTo`函数，因为它的返回值是一个对象，那么`moveTo()`就是一个对象
+
+然后我们们再看在实例这个Promise类的时候发生了什么，我们向他的构造函数中传入了
+
+```Js
+(resolve) => {
+    el.style.transform = `translate(${x}px, ${y}px)`
+    setTimeout(() => {
+        reslove()
+    }, 1000)
+}
+```
+
+这么一个函数，这个函数首先是执行我们的动画，然后再计时器的作用下执行参数中的函数`resolve`，而这个`resolve`就是我们在.then中要写的函数，所以说我们的回调函数就是被写在这个`resolve`中的，那么我们再看之前的动画代码，为什么要在.then中返回这个moveTo对象呢，因为我们在之后还要去调用.then方法，为了确保下一次还能调用.then方法，我们必须要返回promise对象，所以才要在每一步中返回moveTo对象（函数）
+
+综上所述：我们先将它的使用方法以及和回调函数的对应关系总结出来，至于Promise对象的具体原理以后再做讨论；我们在以后要使用回调函数的时候，首先我们先写出一个函数，在其中返回一个Promise实例，在它的构造器中，传入resolve方法，在函数体中写我们的逻辑，如果在某一步需要触发回调函数的时候，我们加上resolve()，即可，之后，我们通过.then就可以调用回调函数了。
 
 #### class
 

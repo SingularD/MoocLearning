@@ -92,10 +92,12 @@ const moveTo = (el, x, y) => {
 btn.addEventListener('click', ev => {
   moveTo(div, '100px', '100px')
     .then(() => {
-      moveTo(div, '200px', '300px')
+      return moveTo(div, '200px', '300px')
+    })
+    .then(() => {
       return moveTo(div, '300px', '400px')
     })
     .then(() => {
-      moveTo(div, '300px', '400px')
+      return moveTo(div, '0px', '0px')
     })
 })
