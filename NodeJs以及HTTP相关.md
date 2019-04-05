@@ -50,3 +50,22 @@ readtstate // 服务器响应变化
 onreadystatechange来监听响应的变化
 ```
 
+
+
+#### Token
+
+token是用于客户端向服务端发送请求时的认证
+
+主要有两个方法，一个签发一个验证，在node中需要引入`jsonwebtoken`模块
+
+```js
+const jwt = require('jsonwebtoken');
+jwt.sign(); // 签发一个token
+jwt.verify(); // 验证token
+```
+
+在前端部分，我们通过localStorage对象来存储和读取就行
+
+`localStorage.setItem(key, value) //存储` 
+
+`localStorage.getItem(key) // 读取` 

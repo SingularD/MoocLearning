@@ -8,7 +8,8 @@ http.createServer(function (req, res) {
 
   let check = {
     "username": "lisongwei",
-    "password": "123"
+    "password": "123",
+    "token": '',
   }
 
   let body = '';
@@ -18,12 +19,27 @@ http.createServer(function (req, res) {
   });
 
   req.on('end',function(){
-    console.log(body)
-    if (body === JSON.stringify(check)) {
-      res.end('success!');
-    }else {
-      res.end('失败')
-    }
+    const secret = 'abc';
+    let token = jwt.sign({
+      exp: Math.floor(Date.now() / 1000) + 60},
+      secret,
+      (err, token) => {
+        check.token = token
+        console.log('1'+token)
+        if (JSON.parse(body).username === 'lisongwei') {
+          jwt
+          console.log('2'+check.token)
+          res.end(JSON.stringify(check));
+        }else {
+          res.end('失败')
+        }
+    })
+    // if (JSON.parse(body).username === 'lisongwei') {
+    //   console.log('2'+check.token)
+    //   res.end(JSON.stringify(check));
+    // }else {
+    //   res.end('失败')
+    // }
   });
 
 
