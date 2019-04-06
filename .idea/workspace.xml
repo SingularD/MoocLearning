@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e7427b5-11fe-4192-b687-87501d3111f2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ES6/js-practice/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/js-practice/api/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/js-practice/api/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/promise/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/promise/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NodeJs以及HTTP相关.md" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJs以及HTTP相关.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/学习总结(js).md" beforeDir="false" afterPath="$PROJECT_DIR$/学习总结(js).md" afterDir="false" />
-    </list>
+    <list default="true" id="2e7427b5-11fe-4192-b687-87501d3111f2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,35 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -156,19 +122,6 @@
               <item name="mooc" type="462c0819:PsiDirectoryNode" />
               <item name="ES6" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mooc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mooc" type="462c0819:PsiDirectoryNode" />
-              <item name="ES6" type="462c0819:PsiDirectoryNode" />
-              <item name="js-practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mooc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mooc" type="462c0819:PsiDirectoryNode" />
-              <item name="ES6" type="462c0819:PsiDirectoryNode" />
-              <item name="js-practice" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -266,12 +219,12 @@
       <workItem from="1554212198792" duration="1794000" />
       <workItem from="1554215190433" duration="181000" />
       <workItem from="1554215383345" duration="6095000" />
-      <workItem from="1554277423012" duration="33777000" />
+      <workItem from="1554277423012" duration="34197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147930000" />
+    <option name="totallyTimeSpent" value="148350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="23" width="1259" height="877" extended-state="0" />
@@ -615,6 +568,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -626,13 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/js-practice/api/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-end-line="1" />
         </state>
       </provider>
     </entry>
