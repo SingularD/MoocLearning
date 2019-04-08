@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2e7427b5-11fe-4192-b687-87501d3111f2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ES6/Vue/vue-demo/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/Vue/vue-demo/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES6/Vue/vue-demo/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/test.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ES6/Vue/vue-demo/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ES6/Vue/vue-demo/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS框架.md" beforeDir="false" afterPath="$PROJECT_DIR$/JS框架.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="81">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -38,6 +41,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,22 +59,6 @@
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#140#161#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/HelloWorld.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1935" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/test.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -92,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ES6/动画练习/main.js" />
         <option value="$PROJECT_DIR$/ES6/imgsCategory/style.css" />
         <option value="$PROJECT_DIR$/ES6/imgsCategory/main.js" />
         <option value="$PROJECT_DIR$/ES6/imgsCategory/asset/js/main.js" />
@@ -140,9 +135,10 @@
         <option value="$PROJECT_DIR$/ES6/promise/main.js" />
         <option value="$PROJECT_DIR$/ES6/js-practice/api/index.js" />
         <option value="$PROJECT_DIR$/ES6/js-practice/api/server.js" />
-        <option value="$PROJECT_DIR$/ES6/Vue/vue-demo/src/router/index.js" />
         <option value="$PROJECT_DIR$/ES6/Vue/vue-demo/src/App.vue" />
+        <option value="$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/child.vue" />
         <option value="$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/test.vue" />
+        <option value="$PROJECT_DIR$/ES6/Vue/vue-demo/src/router/index.js" />
       </list>
     </option>
   </component>
@@ -198,24 +194,6 @@
               <item name="Vue" type="462c0819:PsiDirectoryNode" />
               <item name="vue-demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mooc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mooc" type="462c0819:PsiDirectoryNode" />
-              <item name="ES6" type="462c0819:PsiDirectoryNode" />
-              <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mooc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mooc" type="462c0819:PsiDirectoryNode" />
-              <item name="ES6" type="462c0819:PsiDirectoryNode" />
-              <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,22 +294,21 @@
       <workItem from="1554215190433" duration="181000" />
       <workItem from="1554215383345" duration="6095000" />
       <workItem from="1554277423012" duration="35057000" />
-      <workItem from="1554644843858" duration="1103000" />
+      <workItem from="1554644843858" duration="2624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150313000" />
+    <option name="totallyTimeSpent" value="151834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="23" width="1259" height="1417" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19063005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32981133" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -369,20 +346,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ES6/toggle/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/toggle/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ES6/toggle/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3645">
@@ -646,10 +609,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/child.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/test.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1494" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="81">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -663,26 +656,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/main.js">
+    <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#140#161#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/HelloWorld.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES6/Vue/vue-demo/src/components/test.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="648">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
         </state>
       </provider>
     </entry>
