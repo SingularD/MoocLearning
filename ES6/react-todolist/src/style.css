@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100vh;
+}
+.content{
+    margin-top: 100px;
+    width: 80%;
+    background-color: beige;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.getInput{
+    width: 60%;
+    height: 30px;
+}
+.list-group{
+    width: 60%;
+}
+.todo-item{
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 5px;
+    border: 2px solid gray;
+    border-radius: 10px;
+
+}
+.todo-item p{
+    width: 60%;
+    text-align: center;
+    overflow: hidden;
+}
+.todo-item img{
+    width: 32px;
+}
+.todo-item img:hover{
+    cursor: pointer;
+}

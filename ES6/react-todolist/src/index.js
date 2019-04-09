@@ -1,5 +1,8 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Todolist from './TodoList'
+import TodoList from './TodoList'
 
-ReactDom.render(<Todolist/>, document.getElementById('root'))
+import './style.css'
+
+ReactDom.render(<TodoList/>, document.getElementById('root'))
+
