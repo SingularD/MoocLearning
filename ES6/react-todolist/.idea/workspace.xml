@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39656852-e752-4bed-ad6b-53b3dd1a3a06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-    </list>
+    <list default="true" id="39656852-e752-4bed-ad6b-53b3dd1a3a06" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -105,22 +99,6 @@
               <item name="react-todolist" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-todolist" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="react-todolist" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-todolist" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-todolist" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-todolist" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-todolist" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-todolist" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -140,6 +118,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -178,16 +157,15 @@
       <option name="presentableId" value="Default" />
       <updated>1554720442882</updated>
       <workItem from="1554720444163" duration="7434000" />
-      <workItem from="1554774410864" duration="9070000" />
+      <workItem from="1554774410864" duration="9145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16504000" />
+    <option name="totallyTimeSpent" value="16579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="23" width="1349" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1378012" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
