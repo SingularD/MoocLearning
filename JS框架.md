@@ -366,7 +366,70 @@ computed和methods是两个对象，我们在模板主要使用他们的方法�
 
 `this.$emit('父组件传来的方法'，参数1，参数2...)`来调用，实际上它是使用了父组件的方法，只是参数是有子组件传进去的，所以我们就可以在父组件中获得子组件的数据了
 
+#### Vue路由
+
+在使用Vue路由之前，我们需要安装`vue-router`但是官方脚手架已经为我们安装好了，和react不同，vue路由的定义是写在`src/router/idnex.js`中的，我们定义路由，只需要在该文件的`routes`数组中取添加对象即可，添加对象的格式：
+
+```vue
+{
+    path: '/path', // 该路由对应的路径
+    name: 'Demo', // 该路由的名称
+    component: Demo // 该路径（名称）下对应的组件
+}
+```
+
+我们的路由展示区全部是在`<router-view></router-view>`中展示的，也就是说我们切换的不同路由，改变的页面也是在这个标签之内，相当于`react-router-dom`中的
+
+`<BrowserRouter></BrowserRouter>` ,对应的路由跳转有两种方式
+
+```Vue
+// 静态路由
+<router-link to='/path'></router-link>
+<router-link to={name: 'path'}></router-link>
+<router-link to={path: 'path'}></router-link>
+
+// 动态路由跳转
+<router-link :to={name: path, params: {id: num}}></router-link>//path和id为变量
+```
+
+获取路由参数，当前组件下 `$route.params.id`即可获得id的值
+
+
+
 ### React.js
+
+#### React路由
+
+首先我们需要在项目中安装`react-router-dom`
+
+```shell
+npm install react-router-dom
+```
+
+安装后，我们大多数情况下只会用到这个对象里面的`BrowserRouter Route Link`三个属性所以在使用的时候引入它们三个即可
+
+对于这三个属性
+
+```Shell
+BrowserRouter: 定义路由展示区域
+Route: 定义每一条路由，及其展示的组件
+Link: 跳转路由
+
+<BrowserRouter>
+	<Route paht='/path1/:id' component={component1}>
+	<Route paht='/path2/:id' component={component2}>
+</BrowserRouter>
+
+<Link to='/path1'></Link>
+```
+
+那么对于动态路由，我们怎么来获取到路由中动态部分的参数呢
+
+例如一个路由`http://www.lisongwei/home/li`
+
+如上一个路由，我们通过`this.props.match.params.id`即可获取到数据`li`
+
+
 
 #### 组件之间的通信
 
