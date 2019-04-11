@@ -1,0 +1,11 @@
+.main-header-container{
+    height: 60px;
+    background-color: lightblue;
+}
+.nav{
+    height: 60px;
+    line-height: 60px;
+}
+.disabled{
+    float: right;
+}

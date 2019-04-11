@@ -1,0 +1,18 @@
+/*.login-container{*/
+/*    height: 100vh !important;*/
+/*}*/
+/*.login-form-content{*/
+/*    height: 100vh !important;*/
+/*}*/
+
+.container{
+    height: 30vh;
+}
+.row{
+    height: 30vh;
+}
+
+
+.login-btn{
+    /*text-align: center;*/
+}
