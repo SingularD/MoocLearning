@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { Redirect } from 'react-router-dom'
 
 import './style.css'
 
@@ -10,6 +11,7 @@ class Login extends React.Component{
     this.state = {
       username: '',
       password: '',
+      LoginFlag: false
     }
     this.getUsername = this.getUsername.bind(this)
     this.getPassword = this.getPassword.bind(this)
@@ -55,8 +57,10 @@ class Login extends React.Component{
       .then((res) => {
         if (res.data.result === "OK") {
           localStorage.setItem('token', res.data.token)
-
           alert('登录成功，页面即将跳转')
+          this.setState({
+            LoginFlag: true
+          })
         } else {
           alert('账号或者密码错误！')
         }
@@ -68,6 +72,7 @@ class Login extends React.Component{
   render() {
     return(
       <div className="login-container">
+        { this.state.LoginFlag ? <Redirect to='/'/> : '' }
         <div
           className="login-form-content row justify-content-center align-items-center">
           <form className="col-6 align-content-center">

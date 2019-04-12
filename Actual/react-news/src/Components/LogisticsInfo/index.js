@@ -6,10 +6,9 @@ class LogisticsInfo extends React.Component{
   constructor(props) {
     super(props)
     this.state = {
-      orderId: this.props.match.params.orderId,
-      logisticsNum: '',
-      searchValue: '',
-      logisticsInfoList: []
+      orderId: this.props.match.params.orderId, // 读取路由中的订单号
+      logisticsNum: '', // 存放手动输入框中的订单编号
+      logisticsInfoList: [] // 接受请求中的物流信息
     }
 
     this.getLogisticsNum = this.getLogisticsNum.bind(this)
@@ -24,7 +23,6 @@ class LogisticsInfo extends React.Component{
     this.setState({
       logisticsNum: e.target.value
     })
-    console.log(this.state.logisticsNum)
   }
 
   /**
@@ -49,17 +47,16 @@ class LogisticsInfo extends React.Component{
   /**
    * 在页面加载时，通过URL来请求订单号并获取它的物流信息
    */
-  // componentDidMount() {
-  //   if (this.state.orderId !== '') {
-  //     axios.get(`http://192.168.1.109:8080/api/order/detail?orderNum=${this.state.orderId}`)
-  //       .then((res) => {
-  //         this.setState(() => ({
-  //           logisticsInfoLst: res.data.data,
-  //           searchValue: this.state.orderId
-  //         }))
-  //       })
-  //   }
-  // }
+  componentDidMount() {
+    if (this.state.orderId !== '') {
+      axios.get(`http://192.168.1.109:8080/api/order/detail?orderNum=${this.state.orderId}`)
+        .then((res) => {
+          this.setState({
+            logisticsInfoLst: res.data.data,
+          })
+        })
+    }
+  }
 
   render() {
     return(
@@ -72,7 +69,6 @@ class LogisticsInfo extends React.Component{
               type="text"
               className="form-control"
               placeholder="输入订单号，查询物流信息"
-              // value={this.state.searchValue}
               onChange={this.getLogisticsNum}
             />
             <div className="input-group-append">
@@ -93,7 +89,10 @@ class LogisticsInfo extends React.Component{
                   <div className="row justify-content-between">
                     <div className="col-3">时间</div>
                     <div className="col-3">状态</div>
-                    <div className="col-6">订单编号：</div>
+                    <div className="col-6">
+                      订单编号：
+                      {this.state.orderId ? this.state.orderId : this.state.logisticsNum}
+                    </div>
                   </div>
                 </li>
 
