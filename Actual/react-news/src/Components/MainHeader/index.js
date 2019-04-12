@@ -15,7 +15,7 @@ class MainHeader extends React.Component{
       <nav className="nav col-12 row">
         <Link className="nav-link active col-2 offset-2" to="/search">订单查询</Link>
         <Link className="nav-link col-2" to="/logistics">物流查询</Link>
-        <a className="nav-link col-2" href="#">卖家信息</a>
+        <Link className="nav-link col-2" to="/seller">卖家信息</Link>
           { loginInfo.loginStatus ?
             <a className="nav-link disabled col-2 offset-2">你好:${loginInfo.username}</a>:
             <a className="nav-link col-2 offset-2" href="/login">未登录</a>}

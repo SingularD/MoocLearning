@@ -91,7 +91,7 @@ class MainSearch extends React.Component{
                       <div className="col-3">{item.time}</div>
                       <div className="col-2">
                         <button className="btn btn-primary">
-                          <Link to={`/logistics-info/${item.orderId}`}>
+                          <Link to={`/logistics/${item.orderId}`}>
                             查询物流
                           </Link>
                         </button>
