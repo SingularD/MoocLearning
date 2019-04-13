@@ -26,12 +26,20 @@ class Seller extends React.Component{
     this.handleCancel = this.handleCancel.bind(this)
   }
 
+  /**
+   * 获取搜索框内的订单号
+   * @param e
+   */
   getOrderId(e) {
     this.setState({
       orderId: e.target.value
     })
   }
 
+  /**
+   * 点击查询输入的订单号
+   * 查询订单，获取到订单编号，并请求后台
+   */
   searchOrder() {
     this.setState({
       orderInfoFlag: true,
@@ -51,6 +59,9 @@ class Seller extends React.Component{
     }
   }
 
+  /**
+   * 点击删除按钮，删除订单操作
+   */
   deleteOrder() {
     let choose = window.confirm(`你确定删除订单: ${this.state.orderId} 吗？`)
     if (choose) {
@@ -61,6 +72,10 @@ class Seller extends React.Component{
       alert('订单已删除')
     }
   }
+
+  /**
+   * 点击新建订单后，展示添加订单界面，并隐藏其它组件
+   */
   addOrder() {
     this.setState({
       addOrderFlag: true,
@@ -69,6 +84,9 @@ class Seller extends React.Component{
     })
   }
 
+  /**
+   * 点击修改订单按钮，展示修改订单界面，并隐藏其它组件
+   */
   updateOrder() {
     this.setState({
       updateOrderFlag: true,
@@ -76,6 +94,10 @@ class Seller extends React.Component{
     })
   }
 
+  /**
+   * 取消按钮，点击后隐藏组件
+   * @param type
+   */
   handleCancel(type) {
     if (type === 'add') {
       this.setState({

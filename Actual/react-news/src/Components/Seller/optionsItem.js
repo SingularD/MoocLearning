@@ -24,10 +24,18 @@ class OptionsItem extends React.Component{
     }
   }
 
+  /**
+   * 父组件传入的删除方法，隐藏组件
+   * @param type
+   */
   handleCancel(type) {
     this.props.cancel(type)
   }
 
+  /**
+   * 获取更新后的订单号，用户名，电话号
+   * @param e
+   */
   updateOrderId(e) {
     this.setState({
       orderId: e.target.value
@@ -45,6 +53,8 @@ class OptionsItem extends React.Component{
       uPhone: e.target.value
     })
   }
+
+  
 
   render() {
     return (
