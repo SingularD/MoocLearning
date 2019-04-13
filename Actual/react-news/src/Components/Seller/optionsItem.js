@@ -1,0 +1,127 @@
+import React from 'react'
+import axios from 'axios'
+
+class OptionsItem extends React.Component{
+  constructor(props) {
+    super(props)
+    this.state = {
+      type: this.props.type,
+      createOrder: {
+        flag: false,
+        orderId: '',
+        uName: '',
+        uPhone: ''
+      },
+      updateOrder: {
+        flag: false,
+        orderId: this.props.orderData.orderId,
+        uName: this.props.orderData.uname,
+        uPhone: this.props.orderData.uphone
+      }
+    }
+  }
+
+  handleCancel(type) {
+    this.props.cancel(type)
+  }
+
+  updateOrderId(e) {
+    this.setState({
+      orderId: e.target.value
+    })
+  }
+
+  updateUserName(e) {
+    this.setState({
+      uName: e.target.value
+    })
+  }
+
+  updateUserPhone(e) {
+    this.setState({
+      uPhone: e.target.value
+    })
+  }
+
+  render() {
+    return (
+      <div className="seller-selector-edit col-8 mt-5">
+
+
+        <div className="input-group mb-3">
+          <div className="input-group-prepend">
+            <span className="input-group-text" id="basic-addon1">姓名</span>
+          </div>
+          {
+            this.props.type === 'createOrder' ?
+              <input
+                type="text"
+                className="form-control"
+                placeholder="姓名" /> :
+              <input
+                type="text"
+                placeholder={this.state.updateOrder.uName}
+                onChange={this.updateUserName.bind(this)}
+                className="form-control"
+                 />
+          }
+        </div>
+
+
+        <div className="input-group mb-3">
+          <div className="input-group-prepend">
+            <span className="input-group-text" id="basic-addon1">电话</span>
+          </div>
+          {
+            this.props.type === 'createOrder' ?
+              <input
+                type="text"
+                className="form-control"
+                placeholder="电话" /> :
+              <input
+                type="text"
+                className="form-control"
+                onChange={this.updateUserPhone.bind(this)}
+                placeholder={this.state.updateOrder.uPhone} />
+          }        </div>
+
+
+        <div className="input-group mb-3">
+          <div className="input-group-prepend">
+            <span className="input-group-text" id="basic-addon1">订单</span>
+          </div>
+          {
+            this.props.type === 'createOrder' ?
+              <input
+                type="text"
+                className="form-control"
+                placeholder="订单" /> :
+              <input
+                type="text"
+                placeholder={this.state.updateOrder.orderId}
+                className="form-control"
+                onChange={this.updateOrderId.bind(this)}
+                 />
+          }        </div>
+
+        {
+          this.state.type === 'createOrder' ?
+            <div className="float-right">
+              <button className="btn btn-success mr-5">添加订单</button>
+              <button
+                onClick={this.handleCancel.bind(this, 'add')}
+                className="btn btn-primary">取消添加</button>
+            </div> :
+            <div className="float-right">
+              <button className="btn btn-warning mr-5">修改订单</button>
+              <button
+                onClick={this.handleCancel.bind(this, 'update')}
+                className="btn btn-primary">取消修改</button>
+            </div>
+        }
+      </div>
+    )
+  }
+}
+
+export default OptionsItem
