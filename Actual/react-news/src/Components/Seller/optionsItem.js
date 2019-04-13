@@ -14,9 +14,12 @@ class OptionsItem extends React.Component{
       },
       updateOrder: {
         flag: false,
-        orderId: this.props.orderData.orderId,
-        uName: this.props.orderData.uname,
-        uPhone: this.props.orderData.uphone
+        // orderId: this.props.orderData.orderId,
+        // uName: this.props.orderData.uname,
+        // uPhone: this.props.orderData.uphone
+        orderId: 'a',
+        uName: 'a',
+        uPhone: 'a'
       }
     }
   }
@@ -60,10 +63,10 @@ class OptionsItem extends React.Component{
                 placeholder="姓名" /> :
               <input
                 type="text"
-                placeholder={this.state.updateOrder.uName}
+                defaultValue={this.state.updateOrder.uName}
                 onChange={this.updateUserName.bind(this)}
                 className="form-control"
-                 />
+                placeholder="姓名" />
           }
         </div>
 
@@ -82,7 +85,9 @@ class OptionsItem extends React.Component{
                 type="text"
                 className="form-control"
                 onChange={this.updateUserPhone.bind(this)}
-                placeholder={this.state.updateOrder.uPhone} />
+                defaultValue={this.state.updateOrder.uPhone}
+                placeholder="电话"
+              />
           }        </div>
 
 
@@ -98,10 +103,10 @@ class OptionsItem extends React.Component{
                 placeholder="订单" /> :
               <input
                 type="text"
-                placeholder={this.state.updateOrder.orderId}
                 className="form-control"
+                defaultValue={this.state.updateOrder.orderId}
                 onChange={this.updateOrderId.bind(this)}
-                 />
+                placeholder="订单" />
           }        </div>
 
         {
