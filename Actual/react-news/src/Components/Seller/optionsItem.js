@@ -5,22 +5,7 @@ class OptionsItem extends React.Component{
   constructor(props) {
     super(props)
     this.state = {
-      type: this.props.type,
-      createOrder: {
-        flag: false,
-        orderId: '',
-        uName: '',
-        uPhone: ''
-      },
-      updateOrder: {
-        flag: false,
-        // orderId: this.props.orderData.orderId,
-        // uName: this.props.orderData.uname,
-        // uPhone: this.props.orderData.uphone
-        orderId: 'a',
-        uName: 'a',
-        uPhone: 'a'
-      }
+      type: this.props.type
     }
   }
 
@@ -54,7 +39,28 @@ class OptionsItem extends React.Component{
     })
   }
 
-  
+  componentDidMount() {
+    if (this.props.type === 'updateOrder') {
+      this.setState({
+        updateOrder: {
+          flag: false,
+          orderId: this.props.orderData.orderId,
+          uName: this.props.orderData.uname,
+          uPhone: this.props.orderData.uphone
+        }
+      })
+    } else {
+      this.setState({
+        createOrder: {
+          flag: false,
+          orderId: '',
+          uName: '',
+          uPhone: ''
+        }
+      })
+    }
+  }
+
 
   render() {
     return (

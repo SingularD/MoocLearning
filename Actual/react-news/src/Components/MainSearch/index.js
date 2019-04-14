@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import {Link} from "react-router-dom";
+import { testURL } from "../../Base";
 import './style.css'
 
 class MainSearch extends React.Component{
@@ -22,11 +23,15 @@ class MainSearch extends React.Component{
   }
   queryOrderInfoList() {
     if (this.state.searchPhoneNum !== '') {
-      axios.get(`http://www.logiblack.com/api/order/${this.state.searchPhoneNum}`)
+      axios.get(`${testURL}/order?key=${this.state.searchPhoneNum}`)
         .then((res) => {
           this.setState({
             orderInfoList: res.data
           })
+        })
+        .catch((err) => {
+          console.log(err)
+          alert('查询失败，请输入正确手机号！')
         })
     } else{
       alert('未能查询您手机号相关的订单信息')
@@ -84,14 +89,14 @@ class MainSearch extends React.Component{
               </li>
               {
                 this.state.orderInfoList.map((item, index) => (
-                  <li className="list-group-item">
+                  <li className="list-group-item" key={index}>
                     <div className="row justify-content-between">
                       <div className="col-3">{item.orderId}</div>
                       <div className="col-3">{item.status}</div>
                       <div className="col-3">{item.time}</div>
                       <div className="col-2">
                         <button className="btn btn-primary">
-                          <Link to={`/logistics/${item.orderId}`}>
+                          <Link to={`/logistics/${item.orderNum}`}>
                             查询物流
                           </Link>
                         </button>

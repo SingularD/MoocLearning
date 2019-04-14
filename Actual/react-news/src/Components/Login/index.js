@@ -66,7 +66,7 @@ class Login extends React.Component{
         }
       })
       .catch((err) => {
-        alert(err)
+        console.log(err)
       })
   }
   render() {
