@@ -34,10 +34,14 @@ class LogisticsInfo extends React.Component{
     // 注意setState的用法！！！！！！！
       axios.get(`${baseURL}/order/detail?orderNum=${this.state.logisticsNum}`)
         .then((res) => {
-          this.setState({
-            logisticsInfoList : res.data.data,
-            orderState: orderState[res.data.state]
-          })
+          if (res.data.data.length) {
+            this.setState({
+              logisticsInfoList : res.data.data,
+              orderState: orderState[res.data.state]
+            })
+          } else {
+            alert('查询失败，请输入正确的订单号')
+          }
         })
         .catch((err) => {
           console.log(err)

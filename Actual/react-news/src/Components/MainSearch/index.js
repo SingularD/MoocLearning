@@ -9,6 +9,7 @@ class MainSearch extends React.Component{
     super(props)
     this.state = {
       searchPhoneNum: '',
+      wrongPhoneNum: false,
       orderInfoList: []
     }
 
@@ -25,9 +26,15 @@ class MainSearch extends React.Component{
     if (this.state.searchPhoneNum !== '') {
       axios.get(`${baseURL}/order?key=${this.state.searchPhoneNum}`)
         .then((res) => {
-          this.setState({
-            orderInfoList: res.data
-          })
+          if (res.data.length) {
+            this.setState({
+              orderInfoList: res.data
+            })
+          } else {
+            this.setState({
+              wrongPhoneNum: true
+            })
+          }
         })
         .catch((err) => {
           console.log(err)
@@ -85,6 +92,10 @@ class MainSearch extends React.Component{
                   </div>
                 </div>
               </li>
+              {
+                this.state.wrongPhoneNum ?
+                  <h1 style={{color: 'red'}}>无相关订单，请重新输入!!!</h1> : ''
+              }
               {
                 this.state.orderInfoList.map((item, index) => (
                   <li className="list-group-item" key={index}>

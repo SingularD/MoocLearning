@@ -3,17 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e82737d2-a301-4d13-898b-7aafb878c0d2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-news/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-news/src/Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/src/Base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-news/src/Components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/src/Components/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-news/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-news/src/Components/LogisticsInfo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/src/Components/LogisticsInfo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-news/src/Components/LogisticsInfo/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/react-news/src/Components/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/src/Components/Main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-news/src/Components/MainHeader/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/src/Components/MainHeader/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-news/src/Components/MainSearch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/src/Components/MainSearch/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-news/src/Components/Seller/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/src/Components/Seller/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-news/src/Components/Seller/optionsItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/src/Components/Seller/optionsItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-news/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-news/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,13 +20,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/react-news/src/Components/LogisticsInfo/index.js">
+        <entry file="file://$PROJECT_DIR$/react-news/src/Base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="540">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react-news/src/Components/MainHeader/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react-news/src/Components/Main/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
               <folding>
-                <marker date="1555331021764" expanded="true" signature="2179:2230" ph="..." />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react-news/src/Components/Login/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-798">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -72,7 +92,6 @@
         <option value="$PROJECT_DIR$/react-news/src/Components/Main/MainSeacher.js" />
         <option value="$PROJECT_DIR$/react-news/src/Components/Main/MainHeader.js" />
         <option value="$PROJECT_DIR$/react-news/src/Components/Main/MainSearch.js" />
-        <option value="$PROJECT_DIR$/react-news/src/style.css" />
         <option value="$PROJECT_DIR$/react-news/src/Components/Login/style.css" />
         <option value="$PROJECT_DIR$/react-news/src/Components/Main/style.css" />
         <option value="$PROJECT_DIR$/react-news/src/Components/MainSearch/style.css" />
@@ -83,16 +102,20 @@
         <option value="$PROJECT_DIR$/react-news/src/Components/Seller/Selector.js" />
         <option value="$PROJECT_DIR$/react-news/src/Components/Seller/style.css" />
         <option value="$PROJECT_DIR$/react-news/src/Components/Seller/InsertOrder.js" />
-        <option value="$PROJECT_DIR$/react-news/src/Base.js" />
         <option value="$PROJECT_DIR$/react-news/public/index.html" />
         <option value="$PROJECT_DIR$/react-news/src/index.js" />
-        <option value="$PROJECT_DIR$/react-news/src/Components/Main/index.js" />
         <option value="$PROJECT_DIR$/react-news/src/Components/Login/index.js" />
         <option value="$PROJECT_DIR$/react-news/src/Components/MainHeader/index.js" />
-        <option value="$PROJECT_DIR$/react-news/src/Components/MainSearch/index.js" />
-        <option value="$PROJECT_DIR$/react-news/src/Components/Seller/index.js" />
         <option value="$PROJECT_DIR$/react-news/src/Components/Seller/optionsItem.js" />
+        <option value="$PROJECT_DIR$/react-news/src/style.css" />
+        <option value="$PROJECT_DIR$/react-news/src/Components/Seller/index.js" />
         <option value="$PROJECT_DIR$/react-news/src/Components/LogisticsInfo/index.js" />
+        <option value="$PROJECT_DIR$/react-news/src/Components/MainSearch/index.js" />
+        <option value="$PROJECT_DIR$/react-news/package.json" />
+        <option value="$PROJECT_DIR$/react-news/build/index.html" />
+        <option value="$PROJECT_DIR$/node/index.js" />
+        <option value="$PROJECT_DIR$/react-news/src/Components/Main/index.js" />
+        <option value="$PROJECT_DIR$/react-news/src/Base.js" />
       </list>
     </option>
   </component>
@@ -141,12 +164,6 @@
               <item name="Actual" type="b2602c69:ProjectViewProjectNode" />
               <item name="Actual" type="462c0819:PsiDirectoryNode" />
               <item name="react-news" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Actual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Actual" type="462c0819:PsiDirectoryNode" />
-              <item name="react-news" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -170,14 +187,6 @@
               <item name="react-news" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="LogisticsInfo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Actual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Actual" type="462c0819:PsiDirectoryNode" />
-              <item name="react-news" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="Main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -187,22 +196,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="MainHeader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Actual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Actual" type="462c0819:PsiDirectoryNode" />
-              <item name="react-news" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="MainSearch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Actual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Actual" type="462c0819:PsiDirectoryNode" />
-              <item name="react-news" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="Seller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -217,12 +210,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/node/public" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -235,6 +233,16 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/node">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -253,12 +261,12 @@
       <workItem from="1555060572578" duration="8577000" />
       <workItem from="1555171542017" duration="5601000" />
       <workItem from="1555249817301" duration="6081000" />
-      <workItem from="1555292311791" duration="15801000" />
+      <workItem from="1555292311791" duration="18878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69631000" />
+    <option name="totallyTimeSpent" value="72708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="23" width="1296" height="1417" extended-state="0" />
@@ -362,57 +370,12 @@
     <entry file="file://$PROJECT_DIR$/react-news/src/Components/Main/MainContent.js" />
     <entry file="file://$PROJECT_DIR$/react-news/src/Components/Main/MainHeader.js" />
     <entry file="file://$PROJECT_DIR$/react-news/src/Components/Main/MainSearch.js" />
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/Main/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/MainHeader/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react-news/src/Components/Seller/CreateOrder.js" />
     <entry file="file://$PROJECT_DIR$/react-news/src/Components/Seller/Selector.js" />
     <entry file="file://$PROJECT_DIR$/react-news/src/Components/Seller/UpdateOrder.js" />
     <entry file="file://$PROJECT_DIR$/react-news/src/Components/Seller/InsertOrder.js" />
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/Seller/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react-news/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/Base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/react-news/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -421,37 +384,6 @@
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/Main/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/MainHeader/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/MainSearch/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/MainSearch/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -465,13 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/Seller/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react-news/src/Components/Login/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -479,23 +404,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/Login/index.js">
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/LogisticsInfo/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/Main/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/MainHeader/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/MainSearch/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/Seller/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/Seller/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/LogisticsInfo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1555331940500" expanded="true" signature="2292:2343" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/MainSearch/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2097">
+          <caret line="96" column="45" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/build/asset-manifest.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/build/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2135" selection-start-column="2135" selection-end-column="2135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/precache-manifest.f37f146c4450e0bca80382101fe8ddac.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/MainHeader/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/Login/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/LogisticsInfo/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-news/src/Components/LogisticsInfo/index.js">
+    <entry file="file://$PROJECT_DIR$/react-news/src/Components/Main/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="486">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
           <folding>
-            <marker date="1555331021764" expanded="true" signature="2179:2230" ph="..." />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-news/src/Base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>

@@ -19,13 +19,16 @@ class Main extends React.Component{
   }
 
   componentDidMount() {
-    let _state = {
-      username: localStorage.getItem('$username'),
-      loginStatus: true
+    if (localStorage.getItem('$username')) {
+      let _state = {
+        username: localStorage.getItem('$username'),
+        loginStatus: true
+      }
+      this.setState({
+        loginInfo: Object.assign(this.state.loginInfo, _state)
+      })
     }
-    this.setState({
-      loginInfo: Object.assign(this.state.loginInfo, _state)
-    })
+
   }
 
   render() {
