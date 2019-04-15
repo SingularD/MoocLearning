@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { Redirect } from 'react-router-dom'
+import { baseURL } from "../../Base";
 
 import './style.css'
 
@@ -50,17 +51,22 @@ class Login extends React.Component{
       phoneNum: this.state.username,
       password: this.state.password,
     }
-    axios.post('http://192.168.1.109:8080/api/merchant/login',
+    axios.post(`${baseURL}/merchant/login`,
       JSON.stringify(userInfo),
-      {headers: {'Content-Type': 'application/json;charset=UTF-8'}}
+      {
+        headers: {'Content-Type': 'application/json;charset=UTF-8'}
+      }
     )
       .then((res) => {
         if (res.data.result === "OK") {
           localStorage.setItem('token', res.data.token)
+          localStorage.setItem('$username', this.state.username)
           alert('登录成功，页面即将跳转')
-          this.setState({
-            LoginFlag: true
-          })
+          setTimeout(() => {
+            this.setState({
+              LoginFlag: true
+            })
+          },1000)
         } else {
           alert('账号或者密码错误！')
         }
@@ -96,7 +102,7 @@ class Login extends React.Component{
             </div>
             <button
               type="button"
-              className="col-2 offset-5 btn btn-primary"
+              className="col-lg-2 offset-lg-5 btn btn-primary col-6 offset-3"
               onClick={this.handleSubmit}
             >
               登录

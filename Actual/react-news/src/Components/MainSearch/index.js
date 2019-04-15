@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import {Link} from "react-router-dom";
-import { testURL } from "../../Base";
+import { baseURL } from "../../Base";
 import './style.css'
 
 class MainSearch extends React.Component{
@@ -23,7 +23,7 @@ class MainSearch extends React.Component{
   }
   queryOrderInfoList() {
     if (this.state.searchPhoneNum !== '') {
-      axios.get(`${testURL}/order?key=${this.state.searchPhoneNum}`)
+      axios.get(`${baseURL}/order?key=${this.state.searchPhoneNum}`)
         .then((res) => {
           this.setState({
             orderInfoList: res.data
@@ -36,6 +36,16 @@ class MainSearch extends React.Component{
     } else{
       alert('未能查询您手机号相关的订单信息')
     }
+  }
+  changeDateForm(time) {
+    let date = new Date(time);
+    let Y = date.getFullYear() + '-';
+    let M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+    let D = date.getDate() + ' ';
+    let h = date.getHours() + ':';
+    let m = date.getMinutes() + ':';
+    let s = date.getSeconds();
+    return (Y+M+D+h+m+s);
   }
   render() {
     return(
@@ -68,22 +78,10 @@ class MainSearch extends React.Component{
               <li className="list-group-item">
                 <div className="row justify-content-between">
                   <div className="col-3">订单编号</div>
-                  <div className="col-3">物流状态</div>
+                  <div className="col-3">用户名</div>
                   <div className="col-3">订单时间</div>
                   <div className="col-2">
                       查看物流
-                  </div>
-                </div>
-              </li>
-              <li className="list-group-item">
-                <div className="row justify-content-between">
-                  <div className="col-3">订单编号</div>
-                  <div className="col-3">物流状态</div>
-                  <div className="col-3">订单时间</div>
-                  <div className="col-2">
-                    <button className="btn btn-primary">
-                      查看物流
-                    </button>
                   </div>
                 </div>
               </li>
@@ -91,15 +89,15 @@ class MainSearch extends React.Component{
                 this.state.orderInfoList.map((item, index) => (
                   <li className="list-group-item" key={index}>
                     <div className="row justify-content-between">
-                      <div className="col-3">{item.orderId}</div>
-                      <div className="col-3">{item.status}</div>
-                      <div className="col-3">{item.time}</div>
+                      <div className="col-3">{item.orderNum}</div>
+                      <div className="col-3">{item.uname}</div>
+                      <div className="col-3">{this.changeDateForm(item.time)}</div>
                       <div className="col-2">
-                        <button className="btn btn-primary">
-                          <Link to={`/logistics/${item.orderNum}`}>
+                        <Link to={`/logistics/${item.orderNum}`}>
+                          <button className="btn btn-primary">
                             查询物流
-                          </Link>
-                        </button>
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </li>

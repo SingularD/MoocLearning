@@ -1,8 +1,8 @@
 import React from 'react'
 import axios from 'axios'
-import { BrowserRouter, Route, Link } from "react-router-dom";
 import './style.css'
-import { baseURL } from '../../Base'
+import { Redirect } from 'react-router-dom'
+import { baseURL} from '../../Base'
 
 import OptionsItem from './optionsItem'
 
@@ -12,6 +12,7 @@ class Seller extends React.Component{
     super(props)
     this.state = {
       orderId: '',
+      check: false,
       orderInfoFlag: false,
       addOrderFlag: false,
       updateOrderFlag: false,
@@ -46,14 +47,14 @@ class Seller extends React.Component{
       addOrderFlag: false
     })
     if (this.state.orderId) {
-      axios.get(baseURL + `/order?orderId=${this.state.orderId}`)
+      axios.get( `${baseURL}/order?key=${this.state.orderId}`)
         .then(res => {
           if (!res.data) alert('你查询的订单不存在！')
           else {
-            this.setState(() => ({
-              orderData: res.data,
+            this.setState({
+              orderData: res.data[0],
               orderInfoFlag : true
-            }))
+            })
           }
         })
     }
@@ -68,7 +69,25 @@ class Seller extends React.Component{
       let data = {
         orderNum: this.state.orderId
       }
-      axios.post(baseURL + `/merchant/cancel`, JSON.stringify(data))
+      axios.post(  `${baseURL}/merchant/cancel`,
+        JSON.stringify(data),
+        {headers: {
+            'Content-Type': 'application/json;charset=UTF-8',
+            'Authorization': localStorage.getItem('token')
+          }
+        })
+        .then((res) => {
+          this.setState({
+            orderInfoFlag: false
+          })
+          if (!res.data.result) {
+            localStorage.removeItem('$username')
+            this.setState({
+              check: true
+            })
+            alert('请登录后尝试')
+          }
+        })
       alert('订单已删除')
     }
   }
@@ -113,6 +132,8 @@ class Seller extends React.Component{
   render() {
     return (
       <div className="seller-container row justify-content-center">
+        {this.state.check ? <Redirect to='/login'/> : ''}
+
         <div className="seller-selector row justify-content-between col-8">
           <div className="input-group mb-3">
             <input
@@ -150,7 +171,7 @@ class Seller extends React.Component{
                     <span>操作</span>
                     <span className="float-right">
                   <button
-                    className="btn btn-warning mr-5"
+                    className="btn btn-warning mr-lg-5 mr-3"
                     onClick={this.updateOrder}
                   >
                     修改订单

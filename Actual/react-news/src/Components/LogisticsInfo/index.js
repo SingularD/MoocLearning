@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { orderState, testURL } from "../../Base";
-import './style.css'
+import { orderState, baseURL } from "../../Base";
 
 class LogisticsInfo extends React.Component{
   constructor(props) {
@@ -11,7 +10,6 @@ class LogisticsInfo extends React.Component{
       logisticsNum: '', // 存放手动输入框中的订单编号
       orderState: '',
       logisticsInfoList: [], // 接受请求中的物流信息
-      test: ''
     }
 
     this.getLogisticsNum = this.getLogisticsNum.bind(this)
@@ -34,16 +32,15 @@ class LogisticsInfo extends React.Component{
   getLogisticsInfoList() {
     if (this.state.logisticsNum !== '') {
     // 注意setState的用法！！！！！！！
-      axios.get(`${testURL}/order/detail?orderNum=${this.state.logisticsNum}`)
+      axios.get(`${baseURL}/order/detail?orderNum=${this.state.logisticsNum}`)
         .then((res) => {
-          console.log(res.data.data)
           this.setState({
             logisticsInfoList : res.data.data,
             orderState: orderState[res.data.state]
           })
         })
         .catch((err) => {
-          alert(err)
+          console.log(err)
         })
     }
   }
@@ -52,26 +49,21 @@ class LogisticsInfo extends React.Component{
    * 在页面加载时，通过URL来请求订单号并获取它的物流信息
    */
   componentDidMount() {
-    const _this = this
-    if (this.state.orderId !== '') {
-      axios.get(`${testURL}/order/detail?orderNum=${this.state.orderId}`)
+    if (this.state.orderId !== undefined) {
+      const _this = this
+      axios.get(`${baseURL}/order/detail?orderNum=${this.state.orderId}`)
         .then((res) => {
-          console.log(res.data.data + '-------1')
-          let data = res.data.data
           _this.setState({
-            logisticsInfoLst: [...data],
-            orderState: orderState[res.data.state]
-          },() => {
-            console.log(res.data.data + '----------2')
+            logisticsInfoList : res.data.data,
+            orderState : orderState[res.data.state]
           })
-          console.log(res.data.data + '---------3')
         })
         .catch((err) => {
           console.log(err)
         })
     }
-    console.log(this.state.logisticsInfoList + '111')
   }
+
 
   render() {
     return(
@@ -84,6 +76,7 @@ class LogisticsInfo extends React.Component{
               type="text"
               className="form-control"
               placeholder="输入订单号，查询物流信息"
+              defaultValue={this.state.orderId}
               onChange={this.getLogisticsNum}
             />
             <div className="input-group-append">

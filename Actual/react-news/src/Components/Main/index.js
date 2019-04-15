@@ -1,6 +1,5 @@
 import React from 'react'
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import './style.css'
 
 import MainHeader from '../MainHeader/index'
 import MainSearch from '../MainSearch/index'
@@ -17,6 +16,16 @@ class Main extends React.Component{
       },
 
     }
+  }
+
+  componentDidMount() {
+    let _state = {
+      username: localStorage.getItem('$username'),
+      loginStatus: true
+    }
+    this.setState({
+      loginInfo: Object.assign(this.state.loginInfo, _state)
+    })
   }
 
   render() {

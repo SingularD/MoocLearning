@@ -8,9 +8,6 @@ import Main from './Components/Main/index' // 主要内容部分
 
 
 class App extends React.Component{
-  constructor(props) {
-    super(props)
-  }
   render() {
     return(
       <React.Fragment>

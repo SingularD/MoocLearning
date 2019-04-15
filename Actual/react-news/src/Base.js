@@ -1,5 +1,7 @@
 export const baseURL = 'http://www.logiblack.com/api'
 export const testURL = 'http://192.168.1.109:8080/api'
+export const mockURL = '\n' +
+  'https://f8e8a04c-9086-4048-a79a-47a4b27f0e04.mock.pstmn.io'
 
 
 export const orderState = {
