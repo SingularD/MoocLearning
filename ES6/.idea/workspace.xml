@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a121b1ad-7eff-43a4-a4c9-31b3706c14aa" name="Default" comment="" />
+    <list default="true" id="a121b1ad-7eff-43a4-a4c9-31b3706c14aa" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../Actual/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Actual/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actual/react-news/src/Components/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Actual/react-news/src/Components/Main/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actual/react-news/src/Components/MainHeader/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Actual/react-news/src/Components/MainHeader/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actual/react-news/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Actual/react-news/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../学习总结(HTML,CSS).md" beforeDir="false" afterPath="$PROJECT_DIR$/../学习总结(HTML,CSS).md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,14 +19,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grid-demo/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interview/demo1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="972">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Vue Single File Component" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -38,6 +64,8 @@
         <option value="$PROJECT_DIR$/vue-todolist/src/router/index.js" />
         <option value="$PROJECT_DIR$/vue-todolist/src/components/father.vue" />
         <option value="$PROJECT_DIR$/vue-todolist/src/components/child.vue" />
+        <option value="$PROJECT_DIR$/grid-demo/index.html" />
+        <option value="$PROJECT_DIR$/interview/demo1.html" />
       </list>
     </option>
   </component>
@@ -48,7 +76,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
+    <option name="x" value="72" />
     <option name="y" value="23" />
     <option name="width" value="1300" />
     <option name="height" value="1417" />
@@ -61,6 +89,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -68,11 +97,15 @@
               <item name="ES6" type="b2602c69:ProjectViewProjectNode" />
               <item name="ES6" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ES6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ES6" type="462c0819:PsiDirectoryNode" />
+              <item name="interview" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -112,14 +145,17 @@
       <workItem from="1552811483551" duration="5412000" />
       <workItem from="1554796706781" duration="184000" />
       <workItem from="1554804001475" duration="10368000" />
+      <workItem from="1555409378137" duration="2490000" />
+      <workItem from="1555943501398" duration="482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15964000" />
+    <option name="totallyTimeSpent" value="18985000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="23" width="1300" height="1417" extended-state="0" />
+    <frame x="72" y="23" width="1300" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1915559" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -146,13 +182,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/app.js" />
-    <entry file="file://$PROJECT_DIR$/Demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/index.html" />
     <entry file="file://$PROJECT_DIR$/vue-todolist/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -224,6 +254,20 @@
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid-demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interview/demo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>

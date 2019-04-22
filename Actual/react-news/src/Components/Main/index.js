@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {HashRouter, Route, Switch} from "react-router-dom";
 
 import MainHeader from '../MainHeader/index'
 import MainSearch from '../MainSearch/index'
@@ -33,7 +33,7 @@ class Main extends React.Component{
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <React.Fragment>
           <MainHeader loginInfo={this.state.loginInfo}/>
             <Switch>
@@ -42,7 +42,7 @@ class Main extends React.Component{
               <Route path='/seller/:userId?' component={Seller}/>
             </Switch>
         </React.Fragment>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 

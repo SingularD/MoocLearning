@@ -1,5 +1,17 @@
 # HTML
 
+如何理解HTML语义化标签
+
+* 方便人们阅读
+* 方便机器阅读（SEO）
+
+HTML中的块级元素和内联元素
+
+* 块级元素（独占一行）：div p h ul table等
+* 内联元素（不会独占一行）：span img a input button等
+
+
+
 # CSS
 
 ### Sass
@@ -134,4 +146,14 @@ flex
 align-self
 // 单个项目与其他项目不一样的竖直对齐方式
 ```
+
+### 面试题
+
+* 盒模型宽度计算
+  * offsetWidth = ( 内容宽度 + 内边距 + 边框) 无外边距、
+  * box-sizing: border-box属性 在该属性所属的选择器中，width=offsetWidth
+* margin重叠问题
+  * margin-top和 margin-left为负值的时候元素会向上移动或者左移动
+  * margin-bottom 和 margin-right为负值的时候，元素自身不会移动，临近它的元素会上移或者左移
+  * margin-top和margin-bottom相邻的时候，会取数值大的哪一个，数值小的会被忽略(margin纵向重叠)
 

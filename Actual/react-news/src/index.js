@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Login from './Components/Login/index' // 登录界面组件
@@ -11,12 +11,12 @@ class App extends React.Component{
   render() {
     return(
       <React.Fragment>
-        <BrowserRouter>
+        <HashRouter>
           <Switch>
             <Route path="/login" component = {Login}/>
             <Route path="/" component = {Main}/>
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </React.Fragment>
     )
   }
