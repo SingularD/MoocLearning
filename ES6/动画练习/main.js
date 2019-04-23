@@ -27,7 +27,7 @@ class Transition {
       rotate: '',
       scale: ''
     }
-    this.el = document.querySelector('.test')
+    this.el = document.querySelector('.promiseAll.html')
     this.el.style.transition = `all 3s`
   }
   start() {
@@ -59,6 +59,6 @@ class Transition {
   }
 }
 const tsf = new Transition()
-document.querySelector('.test').addEventListener('click', () => {
+document.querySelector('.promiseAll.html').addEventListener('click', () => {
   tsf.start()
 })

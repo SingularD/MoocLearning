@@ -545,7 +545,48 @@ console.log(person.sayName()) // 我是lisongwei
 
 首先`function Person() {}`是一个函数，但是在之后，我们用`new Perosn()`实例了他之后，他就成为了一个构造函数，如果没有`new`关键字，那么这个函数就是全局对象`window`上面的一个方法了，我们在使用`new`之后构造了一个空对象`Person`这个时候，我们通过`prototype`属性，往这个`Person`空对象的原型对象上面挂载属性和方法，那么这个这个原型对象`Person.prototype`就有了我们之前挂载上去的属性和方法，之后我们声明的对象会共享原型对象`Person.prototype`上面已挂载的所有属性和方法，所以我们暂且理解为`Person`与原型对象两者之间相互共享属性和方法
 
+### JS原型链
 
+区分`prototype`和`__proto__`
+
+`prototype`是显示原型，只有函数才有这个属性，但大部分情况都是在构造函数中取调用它，假设现在我们有一个构造函数Dog，它的显示原型就是`Dog.prototype`，再然后，我们通过Dog实例了一个对象hashiqi，那么这个时候我们可以通过hashiqi的隐式原型来找到Dog的显示原型，
+
+```js
+hashiqi.__proto__ === Dog.prototype
+```
+
+那么原型链的最顶层，也就是构造函数`Object`的显示原型就是`null` 
+
+### JS数据类型
+
+* 值类型：（通过 typeof可以检测，function也可以通过他检测）
+  * String
+  * Number
+  * Boolean
+  * Undefined
+  * Null
+* 引用类型：（通过instanceof检测）
+  * Array
+  * Object
+  * Function
+* 值类型的强制类型转换
+  * 字符串拼接
+  * ==运算符
+  * if语句
+  * 逻辑运算
+
+### JS闭包
+
+区分函数声明和函数表达式
+
+```js
+function foo () {} // 函数声明
+var foo = function () {} // 函数表达式
+```
+
+#### this
+
+this要在执行时才能确认，定义时是无法确认的
 
 ### ES6继承 
 

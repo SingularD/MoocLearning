@@ -154,6 +154,8 @@ align-self
   * box-sizing: border-box属性 在该属性所属的选择器中，width=offsetWidth
 * margin重叠问题
   * margin-top和 margin-left为负值的时候元素会向上移动或者左移动
-  * margin-bottom 和 margin-right为负值的时候，元素自身不会移动，临近它的元素会上移或者左移
+  * margin-bottom 和 margin-right为负值的时候，元素自身不会移动，临近它的元素会上移或者左移，相当于改变了自己的高和宽，当这两个属性的负值为自身的宽高的时候，相当于，自身宽高为0。
   * margin-top和margin-bottom相邻的时候，会取数值大的哪一个，数值小的会被忽略(margin纵向重叠)
-
+* margin 和 padding
+  * 区别：margin容器边框到外部另一个容器边框的距离，所以叫外边距，padding容器边框到内部另一个容器边框的距离，所以叫内边距
+  * padding属性不支持负值，当margin的值为百分比的时候，这个百分比是相对于父元素宽度的百分比。

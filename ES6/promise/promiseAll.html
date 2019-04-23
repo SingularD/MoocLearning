@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const loadImg = (src) => {
+      const promise = new Promise((resolve, reject) => {
+        const img = new Image()
+
+        img.src = src
+
+        img.onload = () => {
+          resolve(img)
+        }
+        img.onerror = (e) => {
+          reject(e)
+        }
+        let h = document.createElement('h1')
+        h.className = 'h'
+        h.innerText = '图片正在加载'
+        document.body.appendChild(h)
+      })
+      return promise
+    }
+
+    const data = [
+      'http://img.9ku.com/pic/qpic/61343.jpg',
+      'http://www.biaobaiju.com/uploads/20180122/14/1516602135-lUIJNGcWmw.jpg',
+      'http://tx.haiqq.com/uploads/allimg/170926/05451RH8-6.jpg'
+    ]
+
+    Promise.all(data.map(item => (loadImg(item)))).then((img) => {
+      img.forEach((item) => {
+        document.body.removeChild(document.querySelector('.h'))
+        document.body.appendChild(item)
+      })
+    })
+</script>
+</body>
+</html>
