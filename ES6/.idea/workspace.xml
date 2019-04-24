@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a121b1ad-7eff-43a4-a4c9-31b3706c14aa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/interview/圣杯布局.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/vue-demo/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/vue-demo/build/webpack.base.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interview/demo1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js-practice/app/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js-practice/app/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-todolist/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-todolist/build/webpack.base.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-demo/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-demo/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-demo/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-demo/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/动画练习/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/动画练习/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../学习总结(HTML,CSS).md" beforeDir="false" afterPath="$PROJECT_DIR$/../学习总结(HTML,CSS).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../前端面试.md" beforeDir="false" afterPath="$PROJECT_DIR$/../前端面试.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,50 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interview/圣杯布局.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interview/双飞翼布局.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interview/执行上下文.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/promise/promiseAll.html">
+        <entry file="file://$PROJECT_DIR$/JS基础/原型与原型链/test1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/promise/promise.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="243">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -78,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -107,6 +60,8 @@
         <option value="$PROJECT_DIR$/promise/test.html" />
         <option value="$PROJECT_DIR$/promise/promise.html" />
         <option value="$PROJECT_DIR$/promise/promiseAll.html" />
+        <option value="$PROJECT_DIR$/test1/index2.html" />
+        <option value="$PROJECT_DIR$/JS基础/原型与原型链/test1.js" />
       </list>
     </option>
   </component>
@@ -120,7 +75,7 @@
     <option name="x" value="72" />
     <option name="y" value="23" />
     <option name="width" value="1300" />
-    <option name="height" value="877" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -141,7 +96,13 @@
             <path>
               <item name="ES6" type="b2602c69:ProjectViewProjectNode" />
               <item name="ES6" type="462c0819:PsiDirectoryNode" />
-              <item name="promise" type="462c0819:PsiDirectoryNode" />
+              <item name="JS基础" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ES6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ES6" type="462c0819:PsiDirectoryNode" />
+              <item name="JS基础" type="462c0819:PsiDirectoryNode" />
+              <item name="原型与原型链" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -173,12 +134,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.test1.js">
     <configuration name="执行上下文.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="执行上下文.js" working-dir="$PROJECT_DIR$/interview">
+      <method v="2" />
+    </configuration>
+    <configuration name="test1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="test1.js" working-dir="$PROJECT_DIR$/JS基础/原型与原型链">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.test1.js" />
         <item itemvalue="Node.js.执行上下文.js" />
       </list>
     </recent_temporary>
@@ -197,22 +162,24 @@
       <workItem from="1554796706781" duration="184000" />
       <workItem from="1554804001475" duration="10368000" />
       <workItem from="1555409378137" duration="2490000" />
-      <workItem from="1555943501398" duration="8211000" />
+      <workItem from="1555943501398" duration="8487000" />
+      <workItem from="1556113405355" duration="1083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26665000" />
+    <option name="totallyTimeSpent" value="28024000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="72" y="23" width="1300" height="877" extended-state="0" />
+    <frame x="72" y="23" width="1300" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1915559" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1915559" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22038217" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22037736" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -314,30 +281,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/interview/执行上下文.html" />
     <entry file="file://$PROJECT_DIR$/interview/圣杯布局.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
-          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview/执行上下文.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interview/双飞翼布局.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="891">
-          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interview/执行上下文.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="432">
           <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -348,14 +309,28 @@
     <entry file="file://$PROJECT_DIR$/promise/promise.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/promise/promiseAll.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
+        <state relative-caret-position="873">
           <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS基础/原型与原型链/test1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
         </state>
       </provider>
     </entry>
