@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            text-align: center;
+            min-width: 550px;
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            background-color: #80b7ff;
+        }
+        .footer{
+            background-color: #e95a44;
+        }
+        .content{
+            padding-left: 150px;
+            padding-right: 200px;
+        }
+        .clearfix:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .center{
+            background-color: #1d5fac;
+            width: 100%;
+        }
+        .left{
+            background-color: #2c3e50;
+            width: 150px;
+            position: relative;
+            margin-left: -100%;
+            right: 150px;
+        }
+        .right{
+            background-color: #32a323;
+            width: 200px;
+            margin-right: -200px;
+        }
+        .col{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="header">header</div>
+<div class="content clearfix">
+    <div class="center col">this is center</div>
+    <div class="left col">this is left</div>
+    <div class="right col">this is right</div>
+</div>
+<div class="footer">this is footer</div>
+</body>
+</html>
